@@ -7,34 +7,61 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class SignUpViewController: UIViewController {
 
-    @IBOutlet weak var EmailTextField: UITextField!
-    @IBOutlet weak var PasswordTextField: UITextField!
-    @IBOutlet weak var SignUpBtn: UIButton!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var signUpBtn: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    }
+        signUpBtn.addTarget(self, action: #selector(handleSignUp), for: .touchUpInside)
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
+    @objc func handleSignUp() {
+        guard let email = emailTextField.text else { return }
+        guard let password = passwordTextField.text else { return }
+        
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        Auth.auth().createUser(withEmail: email, password: password) { user, error in
+            if (error == nil && user != nil ) {
+                print("User created!")
+            } else {
+                print("Error creating user: \(error!.localizedDescription)")
+            }
+        }
+        
+//        if (emailTextField.text == "") {
+//            let alertController = UIAlertController(title: "Error", message: "Please enter your email and password", preferredStyle:.alert)
+//            
+//            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+//            alertController.addAction(defaultAction)
+//            
+//            present(alertController, animated: true, completion: nil)
+//        } else {
+//            Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
+//                if (error == nil) {
+//                    print ("You have successfully signed up")
+//                    
+//                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "Home")
+//                    self.present(vc!, animated: true, completion: nil)
+//                } else {
+//                    let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+//                    
+//                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+//                    alertController.addAction(defaultAction)
+//                    
+//                    self.present(alertController, animated: true, completion: nil)
+//                }
+//            }
+//        }
     }
-    */
 
 }

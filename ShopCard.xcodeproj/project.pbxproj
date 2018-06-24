@@ -15,6 +15,13 @@
 		5BB3697620DED27F00BEA616 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB3697520DED27F00BEA616 /* SignUpViewController.swift */; };
 		5BB3697820DED29100BEA616 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB3697720DED29100BEA616 /* ResetPasswordViewController.swift */; };
 		5BB3697A20DED68C00BEA616 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BB3697920DED68C00BEA616 /* Main.storyboard */; };
+		5BB3697E20DF9F7200BEA616 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5BB3697D20DF9F7200BEA616 /* GoogleService-Info.plist */; };
+		5BB3698020DFFDF200BEA616 /* LoginScreenTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB3697F20DFFDF200BEA616 /* LoginScreenTextField.swift */; };
+		5BB3698820E001D100BEA616 /* NeoSans Black Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5BB3698420E001D100BEA616 /* NeoSans Black Italic.otf */; };
+		5BB3698920E001D100BEA616 /* NeoSans Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5BB3698520E001D100BEA616 /* NeoSans Black.otf */; };
+		5BB3698A20E001D100BEA616 /* NeoSans Light Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5BB3698620E001D100BEA616 /* NeoSans Light Italic.otf */; };
+		5BB3698B20E001D100BEA616 /* NeoSans Medium Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5BB3698720E001D100BEA616 /* NeoSans Medium Italic.otf */; };
+		5BB3698D20E0074B00BEA616 /* shopCardLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB3698C20E0074B00BEA616 /* shopCardLogo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +34,13 @@
 		5BB3697520DED27F00BEA616 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = ViewControllers/SignUpViewController.swift; sourceTree = "<group>"; };
 		5BB3697720DED29100BEA616 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResetPasswordViewController.swift; path = ViewControllers/ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		5BB3697920DED68C00BEA616 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
+		5BB3697D20DF9F7200BEA616 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5BB3697F20DFFDF200BEA616 /* LoginScreenTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenTextField.swift; sourceTree = "<group>"; };
+		5BB3698420E001D100BEA616 /* NeoSans Black Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NeoSans Black Italic.otf"; path = "../../../../Downloads/neosans/NeoSans Black Italic.otf"; sourceTree = "<group>"; };
+		5BB3698520E001D100BEA616 /* NeoSans Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NeoSans Black.otf"; path = "../../../../Downloads/neosans/NeoSans Black.otf"; sourceTree = "<group>"; };
+		5BB3698620E001D100BEA616 /* NeoSans Light Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NeoSans Light Italic.otf"; path = "../../../../Downloads/neosans/NeoSans Light Italic.otf"; sourceTree = "<group>"; };
+		5BB3698720E001D100BEA616 /* NeoSans Medium Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NeoSans Medium Italic.otf"; path = "../../../../Downloads/neosans/NeoSans Medium Italic.otf"; sourceTree = "<group>"; };
+		5BB3698C20E0074B00BEA616 /* shopCardLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shopCardLogo.png; path = ../../../../Desktop/shopCardLogo.png; sourceTree = "<group>"; };
 		6100556C453E064583554E38 /* Pods-ShopCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopCard.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShopCard/Pods-ShopCard.release.xcconfig"; sourceTree = "<group>"; };
 		A294C88F762B488C423BCC59 /* Pods_ShopCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShopCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF0855FC2E3D0CCA8847BEAF /* Pods-ShopCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShopCard/Pods-ShopCard.debug.xcconfig"; sourceTree = "<group>"; };
@@ -73,12 +87,16 @@
 		5B5D913120DAE1C400C5ABAF /* ShopCard */ = {
 			isa = PBXGroup;
 			children = (
+				5BB3698220E001B200BEA616 /* fonts */,
+				5BB3698120DFFF8700BEA616 /* TextFields */,
 				5BB3697420DED26200BEA616 /* ViewControllers */,
 				5B5D913220DAE1C400C5ABAF /* AppDelegate.swift */,
 				5B5D913920DAE1C400C5ABAF /* Assets.xcassets */,
+				5BB3698C20E0074B00BEA616 /* shopCardLogo.png */,
 				5BB3697920DED68C00BEA616 /* Main.storyboard */,
 				5B5D913B20DAE1C400C5ABAF /* LaunchScreen.storyboard */,
 				5B5D913E20DAE1C400C5ABAF /* Info.plist */,
+				5BB3697D20DF9F7200BEA616 /* GoogleService-Info.plist */,
 			);
 			path = ShopCard;
 			sourceTree = "<group>";
@@ -91,6 +109,33 @@
 				5BB3697720DED29100BEA616 /* ResetPasswordViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5BB3698120DFFF8700BEA616 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				5BB3697F20DFFDF200BEA616 /* LoginScreenTextField.swift */,
+			);
+			name = TextFields;
+			sourceTree = "<group>";
+		};
+		5BB3698220E001B200BEA616 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5BB3698320E001BA00BEA616 /* NeoSans */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
+		5BB3698320E001BA00BEA616 /* NeoSans */ = {
+			isa = PBXGroup;
+			children = (
+				5BB3698420E001D100BEA616 /* NeoSans Black Italic.otf */,
+				5BB3698520E001D100BEA616 /* NeoSans Black.otf */,
+				5BB3698620E001D100BEA616 /* NeoSans Light Italic.otf */,
+				5BB3698720E001D100BEA616 /* NeoSans Medium Italic.otf */,
+			);
+			name = NeoSans;
 			sourceTree = "<group>";
 		};
 		9F018167FDD212EEAEA1CFE7 /* Pods */ = {
@@ -163,8 +208,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BB3698A20E001D100BEA616 /* NeoSans Light Italic.otf in Resources */,
+				5BB3698920E001D100BEA616 /* NeoSans Black.otf in Resources */,
+				5BB3698D20E0074B00BEA616 /* shopCardLogo.png in Resources */,
+				5BB3698820E001D100BEA616 /* NeoSans Black Italic.otf in Resources */,
 				5B5D913D20DAE1C400C5ABAF /* LaunchScreen.storyboard in Resources */,
+				5BB3697E20DF9F7200BEA616 /* GoogleService-Info.plist in Resources */,
 				5B5D913A20DAE1C400C5ABAF /* Assets.xcassets in Resources */,
+				5BB3698B20E001D100BEA616 /* NeoSans Medium Italic.otf in Resources */,
 				5BB3697A20DED68C00BEA616 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,6 +274,7 @@
 				5BB3697320DED24D00BEA616 /* LoginViewController.swift in Sources */,
 				5B5D913320DAE1C400C5ABAF /* AppDelegate.swift in Sources */,
 				5BB3697820DED29100BEA616 /* ResetPasswordViewController.swift in Sources */,
+				5BB3698020DFFDF200BEA616 /* LoginScreenTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
