@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DD7874D9D3CFA61AEB4405F /* Pods_ShopCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A294C88F762B488C423BCC59 /* Pods_ShopCard.framework */; };
 		5B5D913320DAE1C400C5ABAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5D913220DAE1C400C5ABAF /* AppDelegate.swift */; };
-		5B5D913520DAE1C400C5ABAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5D913420DAE1C400C5ABAF /* ViewController.swift */; };
-		5B5D913820DAE1C400C5ABAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B5D913620DAE1C400C5ABAF /* Main.storyboard */; };
 		5B5D913A20DAE1C400C5ABAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B5D913920DAE1C400C5ABAF /* Assets.xcassets */; };
 		5B5D913D20DAE1C400C5ABAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B5D913B20DAE1C400C5ABAF /* LaunchScreen.storyboard */; };
+		5BB3697320DED24D00BEA616 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB3697220DED24D00BEA616 /* LoginViewController.swift */; };
+		5BB3697620DED27F00BEA616 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB3697520DED27F00BEA616 /* SignUpViewController.swift */; };
+		5BB3697820DED29100BEA616 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB3697720DED29100BEA616 /* ResetPasswordViewController.swift */; };
+		5BB3697A20DED68C00BEA616 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BB3697920DED68C00BEA616 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5B5D912F20DAE1C400C5ABAF /* ShopCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5D913220DAE1C400C5ABAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5B5D913420DAE1C400C5ABAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5B5D913720DAE1C400C5ABAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5B5D913920DAE1C400C5ABAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B5D913C20DAE1C400C5ABAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B5D913E20DAE1C400C5ABAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BB3697220DED24D00BEA616 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ViewControllers/LoginViewController.swift; sourceTree = "<group>"; };
+		5BB3697520DED27F00BEA616 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = ViewControllers/SignUpViewController.swift; sourceTree = "<group>"; };
+		5BB3697720DED29100BEA616 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResetPasswordViewController.swift; path = ViewControllers/ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		5BB3697920DED68C00BEA616 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
+		6100556C453E064583554E38 /* Pods-ShopCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopCard.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShopCard/Pods-ShopCard.release.xcconfig"; sourceTree = "<group>"; };
+		A294C88F762B488C423BCC59 /* Pods_ShopCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShopCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF0855FC2E3D0CCA8847BEAF /* Pods-ShopCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShopCard/Pods-ShopCard.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DD7874D9D3CFA61AEB4405F /* Pods_ShopCard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30F70942B798A557F9EE72F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A294C88F762B488C423BCC59 /* Pods_ShopCard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5B5D912620DAE1C400C5ABAF = {
 			isa = PBXGroup;
 			children = (
 				5B5D913120DAE1C400C5ABAF /* ShopCard */,
 				5B5D913020DAE1C400C5ABAF /* Products */,
+				9F018167FDD212EEAEA1CFE7 /* Pods */,
+				30F70942B798A557F9EE72F2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +73,33 @@
 		5B5D913120DAE1C400C5ABAF /* ShopCard */ = {
 			isa = PBXGroup;
 			children = (
+				5BB3697420DED26200BEA616 /* ViewControllers */,
 				5B5D913220DAE1C400C5ABAF /* AppDelegate.swift */,
-				5B5D913420DAE1C400C5ABAF /* ViewController.swift */,
-				5B5D913620DAE1C400C5ABAF /* Main.storyboard */,
 				5B5D913920DAE1C400C5ABAF /* Assets.xcassets */,
+				5BB3697920DED68C00BEA616 /* Main.storyboard */,
 				5B5D913B20DAE1C400C5ABAF /* LaunchScreen.storyboard */,
 				5B5D913E20DAE1C400C5ABAF /* Info.plist */,
 			);
 			path = ShopCard;
+			sourceTree = "<group>";
+		};
+		5BB3697420DED26200BEA616 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5BB3697220DED24D00BEA616 /* LoginViewController.swift */,
+				5BB3697520DED27F00BEA616 /* SignUpViewController.swift */,
+				5BB3697720DED29100BEA616 /* ResetPasswordViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9F018167FDD212EEAEA1CFE7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF0855FC2E3D0CCA8847BEAF /* Pods-ShopCard.debug.xcconfig */,
+				6100556C453E064583554E38 /* Pods-ShopCard.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B5D914120DAE1C400C5ABAF /* Build configuration list for PBXNativeTarget "ShopCard" */;
 			buildPhases = (
+				6026FB6F8C4DE1D7ACFA68FA /* [CP] Check Pods Manifest.lock */,
 				5B5D912B20DAE1C400C5ABAF /* Sources */,
 				5B5D912C20DAE1C400C5ABAF /* Frameworks */,
 				5B5D912D20DAE1C400C5ABAF /* Resources */,
+				36F6A09A727CAD9A7A415896 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,33 +165,70 @@
 			files = (
 				5B5D913D20DAE1C400C5ABAF /* LaunchScreen.storyboard in Resources */,
 				5B5D913A20DAE1C400C5ABAF /* Assets.xcassets in Resources */,
-				5B5D913820DAE1C400C5ABAF /* Main.storyboard in Resources */,
+				5BB3697A20DED68C00BEA616 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36F6A09A727CAD9A7A415896 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ShopCard/Pods-ShopCard-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShopCard/Pods-ShopCard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6026FB6F8C4DE1D7ACFA68FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShopCard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5B5D912B20DAE1C400C5ABAF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B5D913520DAE1C400C5ABAF /* ViewController.swift in Sources */,
+				5BB3697620DED27F00BEA616 /* SignUpViewController.swift in Sources */,
+				5BB3697320DED24D00BEA616 /* LoginViewController.swift in Sources */,
 				5B5D913320DAE1C400C5ABAF /* AppDelegate.swift in Sources */,
+				5BB3697820DED29100BEA616 /* ResetPasswordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5B5D913620DAE1C400C5ABAF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5B5D913720DAE1C400C5ABAF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5B5D913B20DAE1C400C5ABAF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -258,9 +335,11 @@
 		};
 		5B5D914220DAE1C400C5ABAF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF0855FC2E3D0CCA8847BEAF /* Pods-ShopCard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ShopCard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = martin.ShopCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -270,9 +349,11 @@
 		};
 		5B5D914320DAE1C400C5ABAF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6100556C453E064583554E38 /* Pods-ShopCard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ShopCard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = martin.ShopCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -299,6 +380,7 @@
 				5B5D914320DAE1C400C5ABAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
