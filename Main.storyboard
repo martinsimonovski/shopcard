@@ -12,6 +12,12 @@
         <array key="NeoSans Black Italic.otf">
             <string>NeoSans-BlackItalic</string>
         </array>
+        <array key="Roboto-Black.ttf">
+            <string>Roboto-Black</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Login View Controller-->
@@ -26,12 +32,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="headerAbstractShape" translatesAutoresizingMaskIntoConstraints="NO" id="2Dh-bj-0oe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="284"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YpI-dQ-eV0">
                                 <rect key="frame" x="37" y="619" width="140" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
                                 <state key="normal" title="Don't have an account?">
-                                    <color key="titleColor" red="0.1764705882352941" green="0.21176470588235294" blue="0.27843137254901962" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="0.53725490196078429" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="2Zq-SY-3Pi" kind="presentation" id="nO8-l8-BCH"/>
@@ -42,54 +52,51 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
                                 <state key="normal" title="Reset Password">
-                                    <color key="titleColor" red="0.1764705882352941" green="0.21176470588235294" blue="0.27843137254901962" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="0.5450980392" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="Xpj-Hj-rCS" kind="presentation" id="WzX-JV-FF9"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="tfA-gO-rDk" customClass="LoginScreenTextField" customModule="ShopCard" customModuleProvider="target">
-                                <rect key="frame" x="37" y="234" width="300" height="50"/>
+                                <rect key="frame" x="37" y="295" width="300" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cF0-I1-Ywj" customClass="LoginScreenTextField" customModule="ShopCard" customModuleProvider="target">
-                                <rect key="frame" x="37" y="301" width="300" height="50"/>
+                                <rect key="frame" x="37" y="362" width="300" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0AU-bQ-6L7">
-                                <rect key="frame" x="37" y="379" width="300" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0AU-bQ-6L7" customClass="ButtonPrimary" customModule="ShopCard" customModuleProvider="target">
+                                <rect key="frame" x="37" y="440" width="300" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.1764705882352941" green="0.21176470588235294" blue="0.27843137254901962" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.54509803921568623" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="17"/>
                                 <state key="normal" title="Login">
-                                    <color key="titleColor" red="0.85490196078431369" green="0.8901960784313725" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ix-PZ-UwO">
-                                <rect key="frame" x="37" y="178" width="62" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
-                                <color key="textColor" red="0.1764705882352941" green="0.21176470588235294" blue="0.27843137254901962" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shopCardLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="F2c-r7-A0O">
-                                <rect key="frame" x="118" y="48" width="138" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ShopCard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uck-T9-Uu3">
-                                <rect key="frame" x="0.0" y="111" width="375" height="39"/>
+                                <rect key="frame" x="0.0" y="181" width="375" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="NeoSans-BlackItalic" family="NeoSans" pointSize="30"/>
-                                <color key="textColor" red="0.1764705882352941" green="0.21176470588235294" blue="0.27843137254901962" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
+                                <color key="textColor" red="1" green="0.53725490200000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.88627450980392153" green="0.44705882352941173" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="shadowColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="0.38968211206896552" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="F2c-r7-A0O">
+                                <rect key="frame" x="162" y="114" width="51" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.96078431372549022" green="0.96470588235294119" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="EmailTextField" destination="tfA-gO-rDk" id="sgF-Oo-T0g"/>
@@ -229,7 +236,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="shopCardLogo.png" width="84" height="94"/>
+        <image name="headerAbstractShape" width="375" height="321"/>
+        <image name="logo" width="51" height="57"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="WzX-JV-FF9"/>
