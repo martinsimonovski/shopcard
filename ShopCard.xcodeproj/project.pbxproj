@@ -41,6 +41,7 @@
 		5BB369B520E2C5A500BEA616 /* RobotoCondensed-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BB369A320E2C5A500BEA616 /* RobotoCondensed-LightItalic.ttf */; };
 		5BB369B620E2C5A500BEA616 /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BB369A420E2C5A500BEA616 /* RobotoCondensed-Regular.ttf */; };
 		5BB369B820E2C82300BEA616 /* ButtonPrimary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB369B720E2C82300BEA616 /* ButtonPrimary.swift */; };
+		5BB369BE20E2DF6000BEA616 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB369BD20E2DF6000BEA616 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +80,7 @@
 		5BB369A320E2C5A500BEA616 /* RobotoCondensed-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RobotoCondensed-LightItalic.ttf"; path = "../../../../Downloads/roboto/RobotoCondensed-LightItalic.ttf"; sourceTree = "<group>"; };
 		5BB369A420E2C5A500BEA616 /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RobotoCondensed-Regular.ttf"; path = "../../../../Downloads/roboto/RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
 		5BB369B720E2C82300BEA616 /* ButtonPrimary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonPrimary.swift; sourceTree = "<group>"; };
+		5BB369BD20E2DF6000BEA616 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		6100556C453E064583554E38 /* Pods-ShopCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopCard.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShopCard/Pods-ShopCard.release.xcconfig"; sourceTree = "<group>"; };
 		A294C88F762B488C423BCC59 /* Pods_ShopCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShopCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF0855FC2E3D0CCA8847BEAF /* Pods-ShopCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShopCard/Pods-ShopCard.debug.xcconfig"; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				5BB3697220DED24D00BEA616 /* LoginViewController.swift */,
 				5BB3697520DED27F00BEA616 /* SignUpViewController.swift */,
 				5BB3697720DED29100BEA616 /* ResetPasswordViewController.swift */,
+				5BB369BD20E2DF6000BEA616 /* HomeViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				5BB3697320DED24D00BEA616 /* LoginViewController.swift in Sources */,
 				5B5D913320DAE1C400C5ABAF /* AppDelegate.swift in Sources */,
 				5BB3697820DED29100BEA616 /* ResetPasswordViewController.swift in Sources */,
+				5BB369BE20E2DF6000BEA616 /* HomeViewController.swift in Sources */,
 				5BB3698020DFFDF200BEA616 /* LoginScreenTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

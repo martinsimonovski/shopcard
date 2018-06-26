@@ -12,9 +12,10 @@ import FirebaseAuth
 
 class SignUpViewController: UIViewController {
 
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var signUpBtn: UIButton!
+    @IBOutlet weak var usernameTextField: LoginScreenTextField!
+    @IBOutlet weak var emailTextField: LoginScreenTextField!
+    @IBOutlet weak var passwordTextField: LoginScreenTextField!
+    @IBOutlet weak var signUpBtn: ButtonPrimary!
     
     
     override func viewDidLoad() {
@@ -25,14 +26,38 @@ class SignUpViewController: UIViewController {
 
     }
     
+    /**
+      Enables or disables the signUpBtn
+    */
+    func setSignUpBtn(enabled: Bool) {
+        if (enabled) {
+            signUpBtn.alpha = 1.0
+            signUpBtn.isEnabled = true
+        } else {
+            signUpBtn.alpha = 0.5
+            signUpBtn.isEnabled = false
+        }
+    }
+    
     @objc func handleSignUp() {
+        guard let username = usernameTextField.text else { return }
         guard let email = emailTextField.text else { return }
         guard let password = passwordTextField.text else { return }
         
-
+        setSignUpBtn(enabled: false)
+        
         Auth.auth().createUser(withEmail: email, password: password) { user, error in
             if (error == nil && user != nil ) {
                 print("User created!")
+                
+                let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
+                changeRequest?.displayName = username
+                changeRequest?.commitChanges { error in
+                    if (error == nil) {
+                        print("User display name changed!");
+                        self.dismiss(animated: false, completion: nil)
+                    }
+                }
             } else {
                 print("Error creating user: \(error!.localizedDescription)")
             }
