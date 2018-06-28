@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4DD7874D9D3CFA61AEB4405F /* Pods_ShopCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A294C88F762B488C423BCC59 /* Pods_ShopCard.framework */; };
 		5B5D913320DAE1C400C5ABAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5D913220DAE1C400C5ABAF /* AppDelegate.swift */; };
 		5B5D913A20DAE1C400C5ABAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B5D913920DAE1C400C5ABAF /* Assets.xcassets */; };
 		5B5D913D20DAE1C400C5ABAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B5D913B20DAE1C400C5ABAF /* LaunchScreen.storyboard */; };
@@ -42,9 +41,12 @@
 		5BB369B620E2C5A500BEA616 /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BB369A420E2C5A500BEA616 /* RobotoCondensed-Regular.ttf */; };
 		5BB369B820E2C82300BEA616 /* ButtonPrimary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB369B720E2C82300BEA616 /* ButtonPrimary.swift */; };
 		5BB369BE20E2DF6000BEA616 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB369BD20E2DF6000BEA616 /* HomeViewController.swift */; };
+		5D87CC16A1C0B298AE63BEA5 /* Pods_ShopCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE6157A2DDD644A30B2834F /* Pods_ShopCard.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2BE6157A2DDD644A30B2834F /* Pods_ShopCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShopCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3645A80314C6698D6AD0BB09 /* Pods-ShopCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShopCard/Pods-ShopCard.debug.xcconfig"; sourceTree = "<group>"; };
 		5B5D912F20DAE1C400C5ABAF /* ShopCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5D913220DAE1C400C5ABAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B5D913920DAE1C400C5ABAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,9 +83,7 @@
 		5BB369A420E2C5A500BEA616 /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RobotoCondensed-Regular.ttf"; path = "../../../../Downloads/roboto/RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
 		5BB369B720E2C82300BEA616 /* ButtonPrimary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonPrimary.swift; sourceTree = "<group>"; };
 		5BB369BD20E2DF6000BEA616 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		6100556C453E064583554E38 /* Pods-ShopCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopCard.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShopCard/Pods-ShopCard.release.xcconfig"; sourceTree = "<group>"; };
-		A294C88F762B488C423BCC59 /* Pods_ShopCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShopCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF0855FC2E3D0CCA8847BEAF /* Pods-ShopCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShopCard/Pods-ShopCard.debug.xcconfig"; sourceTree = "<group>"; };
+		F5CCBA313623350FE6775F1A /* Pods-ShopCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopCard.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShopCard/Pods-ShopCard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,28 +91,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DD7874D9D3CFA61AEB4405F /* Pods_ShopCard.framework in Frameworks */,
+				5D87CC16A1C0B298AE63BEA5 /* Pods_ShopCard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		30F70942B798A557F9EE72F2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A294C88F762B488C423BCC59 /* Pods_ShopCard.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		5B5D912620DAE1C400C5ABAF = {
 			isa = PBXGroup;
 			children = (
 				5B5D913120DAE1C400C5ABAF /* ShopCard */,
 				5B5D913020DAE1C400C5ABAF /* Products */,
-				9F018167FDD212EEAEA1CFE7 /* Pods */,
-				30F70942B798A557F9EE72F2 /* Frameworks */,
+				890243FC504C8DA4B1882F4E /* Pods */,
+				97D514B68543E144A4FCCA6B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -222,13 +214,21 @@
 			name = Buttons;
 			sourceTree = "<group>";
 		};
-		9F018167FDD212EEAEA1CFE7 /* Pods */ = {
+		890243FC504C8DA4B1882F4E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AF0855FC2E3D0CCA8847BEAF /* Pods-ShopCard.debug.xcconfig */,
-				6100556C453E064583554E38 /* Pods-ShopCard.release.xcconfig */,
+				3645A80314C6698D6AD0BB09 /* Pods-ShopCard.debug.xcconfig */,
+				F5CCBA313623350FE6775F1A /* Pods-ShopCard.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		97D514B68543E144A4FCCA6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BE6157A2DDD644A30B2834F /* Pods_ShopCard.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,11 +238,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B5D914120DAE1C400C5ABAF /* Build configuration list for PBXNativeTarget "ShopCard" */;
 			buildPhases = (
-				6026FB6F8C4DE1D7ACFA68FA /* [CP] Check Pods Manifest.lock */,
+				4DD3AAA9929A802035256A2C /* [CP] Check Pods Manifest.lock */,
 				5B5D912B20DAE1C400C5ABAF /* Sources */,
 				5B5D912C20DAE1C400C5ABAF /* Frameworks */,
 				5B5D912D20DAE1C400C5ABAF /* Resources */,
-				36F6A09A727CAD9A7A415896 /* [CP] Embed Pods Frameworks */,
+				74102F575E3567302B6C5079 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -325,29 +325,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		36F6A09A727CAD9A7A415896 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ShopCard/Pods-ShopCard-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShopCard/Pods-ShopCard-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6026FB6F8C4DE1D7ACFA68FA /* [CP] Check Pods Manifest.lock */ = {
+		4DD3AAA9929A802035256A2C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -363,6 +341,30 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74102F575E3567302B6C5079 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ShopCard/Pods-ShopCard-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShopCard/Pods-ShopCard-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -491,7 +493,7 @@
 		};
 		5B5D914220DAE1C400C5ABAF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF0855FC2E3D0CCA8847BEAF /* Pods-ShopCard.debug.xcconfig */;
+			baseConfigurationReference = 3645A80314C6698D6AD0BB09 /* Pods-ShopCard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ShopCard/Info.plist;
@@ -505,7 +507,7 @@
 		};
 		5B5D914320DAE1C400C5ABAF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6100556C453E064583554E38 /* Pods-ShopCard.release.xcconfig */;
+			baseConfigurationReference = F5CCBA313623350FE6775F1A /* Pods-ShopCard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ShopCard/Info.plist;

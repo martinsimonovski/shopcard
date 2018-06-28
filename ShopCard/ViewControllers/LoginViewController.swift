@@ -14,9 +14,11 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailTextField: LoginScreenTextField!
     @IBOutlet weak var passwordTextField: LoginScreenTextField!
     @IBOutlet weak var loginBtn: ButtonPrimary!
+    @IBOutlet weak var errorLbl: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        showHideError(show: false)
 
         // Do any additional setup after loading the view.
         loginBtn.addTarget(self, action: #selector(handleLogIn), for: .touchUpInside)
@@ -27,13 +29,19 @@ class LoginViewController: UIViewController {
         guard let email = emailTextField.text else { return }
         guard let password = passwordTextField.text else { return }
         
+        loginBtn.setTitle("Logging in...", for: .normal)
+        showHideError(show: false)
+        
         Auth.auth().signIn(withEmail: email, password: password) { user, error in
             if (error == nil && user != nil) {
                 print("User logged in")
                 self.performSegue(withIdentifier: "toHomeScreen", sender: self)
             } else {
                 print("Error loggin in: \(error!.localizedDescription)")
+                self.showHideError(show: true, message: error!.localizedDescription)
             }
+            
+            self.loginBtn.setTitle("Login", for: .normal)
         }
     }
 
@@ -43,6 +51,11 @@ class LoginViewController: UIViewController {
         if let user = Auth.auth().currentUser  {
             self.performSegue(withIdentifier: "toHomeScreen", sender: self)
         }
+    }
+    
+    @objc func showHideError(show: Bool = false, message: String = "") {
+        self.errorLbl.text = message
+        self.errorLbl.isHidden = !show
     }
 
 }

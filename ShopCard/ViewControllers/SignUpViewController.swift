@@ -16,6 +16,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var emailTextField: LoginScreenTextField!
     @IBOutlet weak var passwordTextField: LoginScreenTextField!
     @IBOutlet weak var signUpBtn: ButtonPrimary!
+    @IBOutlet weak var errorLbl: UILabel!
     
     
     override func viewDidLoad() {
@@ -23,7 +24,7 @@ class SignUpViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         signUpBtn.addTarget(self, action: #selector(handleSignUp), for: .touchUpInside)
-
+        showHideError(show: false)
     }
     
     /**
@@ -45,6 +46,8 @@ class SignUpViewController: UIViewController {
         guard let password = passwordTextField.text else { return }
         
         setSignUpBtn(enabled: false)
+        showHideError(show: false)
+        
         
         Auth.auth().createUser(withEmail: email, password: password) { user, error in
             if (error == nil && user != nil ) {
@@ -60,6 +63,7 @@ class SignUpViewController: UIViewController {
                 }
             } else {
                 print("Error creating user: \(error!.localizedDescription)")
+                self.showHideError(show: true, message: error!.localizedDescription)
             }
         }
         
@@ -87,6 +91,11 @@ class SignUpViewController: UIViewController {
 //                }
 //            }
 //        }
+    }
+    
+    @objc func showHideError(show: Bool = false, message: String = "") {
+        self.errorLbl.text = message
+        self.errorLbl.isHidden = !show
     }
 
 }

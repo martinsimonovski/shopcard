@@ -8,4 +8,5 @@ target 'ShopCard' do
   # Pods for ShopCard
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
 end

@@ -27,6 +27,8 @@ class LoginScreenTextField: UITextField {
         border.borderWidth = width
         self.layer.addSublayer(border)
         self.layer.masksToBounds = true
+        self.textColor = .black
+        self.tintColor = .orange
     }
     
     override func textRect(forBounds bounds: CGRect) -> CGRect {
