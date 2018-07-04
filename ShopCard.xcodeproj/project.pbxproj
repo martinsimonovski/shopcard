@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B3D08E420ED63E800F0542D /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3D08E320ED63E800F0542D /* SecondaryButton.swift */; };
+		5B3D08E720ED6AED00F0542D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3D08E620ED6AED00F0542D /* Colors.swift */; };
+		5B3D08E920ED72A100F0542D /* LauncherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3D08E820ED72A100F0542D /* LauncherViewController.swift */; };
 		5B5D913320DAE1C400C5ABAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5D913220DAE1C400C5ABAF /* AppDelegate.swift */; };
 		5B5D913A20DAE1C400C5ABAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B5D913920DAE1C400C5ABAF /* Assets.xcassets */; };
 		5B5D913D20DAE1C400C5ABAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B5D913B20DAE1C400C5ABAF /* LaunchScreen.storyboard */; };
@@ -20,7 +23,6 @@
 		5BB3698920E001D100BEA616 /* NeoSans Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5BB3698520E001D100BEA616 /* NeoSans Black.otf */; };
 		5BB3698A20E001D100BEA616 /* NeoSans Light Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5BB3698620E001D100BEA616 /* NeoSans Light Italic.otf */; };
 		5BB3698B20E001D100BEA616 /* NeoSans Medium Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5BB3698720E001D100BEA616 /* NeoSans Medium Italic.otf */; };
-		5BB3698D20E0074B00BEA616 /* shopCardLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB3698C20E0074B00BEA616 /* shopCardLogo.png */; };
 		5BB369A520E2C5A500BEA616 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BB3699320E2C5A500BEA616 /* Roboto-Black.ttf */; };
 		5BB369A620E2C5A500BEA616 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BB3699420E2C5A500BEA616 /* Roboto-BlackItalic.ttf */; };
 		5BB369A720E2C5A500BEA616 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BB3699520E2C5A500BEA616 /* Roboto-Bold.ttf */; };
@@ -41,12 +43,16 @@
 		5BB369B620E2C5A500BEA616 /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BB369A420E2C5A500BEA616 /* RobotoCondensed-Regular.ttf */; };
 		5BB369B820E2C82300BEA616 /* ButtonPrimary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB369B720E2C82300BEA616 /* ButtonPrimary.swift */; };
 		5BB369BE20E2DF6000BEA616 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB369BD20E2DF6000BEA616 /* HomeViewController.swift */; };
-		5D87CC16A1C0B298AE63BEA5 /* Pods_ShopCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE6157A2DDD644A30B2834F /* Pods_ShopCard.framework */; };
+		5BB369C020E557B800BEA616 /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB369BF20E557B800BEA616 /* AddCardViewController.swift */; };
+		5BE0D0F420ED46C700722557 /* RadialGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE0D0F320ED46C700722557 /* RadialGradientLayer.swift */; };
+		5BE0D0F720ED559E00722557 /* LinearGradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE0D0F620ED559E00722557 /* LinearGradientButton.swift */; };
+		6BFF0AD86872173CA7DE4F17 /* Pods_ShopCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98989EF70A5B7743CF31F3EF /* Pods_ShopCard.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2BE6157A2DDD644A30B2834F /* Pods_ShopCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShopCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3645A80314C6698D6AD0BB09 /* Pods-ShopCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShopCard/Pods-ShopCard.debug.xcconfig"; sourceTree = "<group>"; };
+		5B3D08E320ED63E800F0542D /* SecondaryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
+		5B3D08E620ED6AED00F0542D /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		5B3D08E820ED72A100F0542D /* LauncherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LauncherViewController.swift; sourceTree = "<group>"; };
 		5B5D912F20DAE1C400C5ABAF /* ShopCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5D913220DAE1C400C5ABAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B5D913920DAE1C400C5ABAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,7 +68,6 @@
 		5BB3698520E001D100BEA616 /* NeoSans Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NeoSans Black.otf"; path = "../../../../Downloads/neosans/NeoSans Black.otf"; sourceTree = "<group>"; };
 		5BB3698620E001D100BEA616 /* NeoSans Light Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NeoSans Light Italic.otf"; path = "../../../../Downloads/neosans/NeoSans Light Italic.otf"; sourceTree = "<group>"; };
 		5BB3698720E001D100BEA616 /* NeoSans Medium Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NeoSans Medium Italic.otf"; path = "../../../../Downloads/neosans/NeoSans Medium Italic.otf"; sourceTree = "<group>"; };
-		5BB3698C20E0074B00BEA616 /* shopCardLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shopCardLogo.png; path = ../../../../Desktop/shopCardLogo.png; sourceTree = "<group>"; };
 		5BB3699320E2C5A500BEA616 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Black.ttf"; path = "../../../../Downloads/roboto/Roboto-Black.ttf"; sourceTree = "<group>"; };
 		5BB3699420E2C5A500BEA616 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-BlackItalic.ttf"; path = "../../../../Downloads/roboto/Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
 		5BB3699520E2C5A500BEA616 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Bold.ttf"; path = "../../../../Downloads/roboto/Roboto-Bold.ttf"; sourceTree = "<group>"; };
@@ -83,7 +88,12 @@
 		5BB369A420E2C5A500BEA616 /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RobotoCondensed-Regular.ttf"; path = "../../../../Downloads/roboto/RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
 		5BB369B720E2C82300BEA616 /* ButtonPrimary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonPrimary.swift; sourceTree = "<group>"; };
 		5BB369BD20E2DF6000BEA616 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		F5CCBA313623350FE6775F1A /* Pods-ShopCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopCard.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShopCard/Pods-ShopCard.release.xcconfig"; sourceTree = "<group>"; };
+		5BB369BF20E557B800BEA616 /* AddCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCardViewController.swift; sourceTree = "<group>"; };
+		5BE0D0F320ED46C700722557 /* RadialGradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadialGradientLayer.swift; sourceTree = "<group>"; };
+		5BE0D0F620ED559E00722557 /* LinearGradientButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearGradientButton.swift; sourceTree = "<group>"; };
+		6D057BEF1D1F3A64D3C559EA /* Pods-ShopCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShopCard/Pods-ShopCard.debug.xcconfig"; sourceTree = "<group>"; };
+		98989EF70A5B7743CF31F3EF /* Pods_ShopCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShopCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF7E12801A8AABA7A10184A5 /* Pods-ShopCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopCard.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShopCard/Pods-ShopCard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,20 +101,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D87CC16A1C0B298AE63BEA5 /* Pods_ShopCard.framework in Frameworks */,
+				6BFF0AD86872173CA7DE4F17 /* Pods_ShopCard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CCF314B804C03CBEB854EA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98989EF70A5B7743CF31F3EF /* Pods_ShopCard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2E49749784B86FADC14B4724 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D057BEF1D1F3A64D3C559EA /* Pods-ShopCard.debug.xcconfig */,
+				BF7E12801A8AABA7A10184A5 /* Pods-ShopCard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5B3D08E520ED6AB700F0542D /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5B3D08E620ED6AED00F0542D /* Colors.swift */,
+			);
+			name = extensions;
+			sourceTree = "<group>";
+		};
 		5B5D912620DAE1C400C5ABAF = {
 			isa = PBXGroup;
 			children = (
 				5B5D913120DAE1C400C5ABAF /* ShopCard */,
 				5B5D913020DAE1C400C5ABAF /* Products */,
-				890243FC504C8DA4B1882F4E /* Pods */,
-				97D514B68543E144A4FCCA6B /* Frameworks */,
+				2E49749784B86FADC14B4724 /* Pods */,
+				0CCF314B804C03CBEB854EA1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,12 +154,12 @@
 		5B5D913120DAE1C400C5ABAF /* ShopCard */ = {
 			isa = PBXGroup;
 			children = (
+				5B3D08E520ED6AB700F0542D /* extensions */,
 				5BB369B920E2C82E00BEA616 /* theme */,
 				5BB3698220E001B200BEA616 /* fonts */,
 				5BB3697420DED26200BEA616 /* ViewControllers */,
 				5B5D913220DAE1C400C5ABAF /* AppDelegate.swift */,
 				5B5D913920DAE1C400C5ABAF /* Assets.xcassets */,
-				5BB3698C20E0074B00BEA616 /* shopCardLogo.png */,
 				5BB3697920DED68C00BEA616 /* Main.storyboard */,
 				5B5D913B20DAE1C400C5ABAF /* LaunchScreen.storyboard */,
 				5B5D913E20DAE1C400C5ABAF /* Info.plist */,
@@ -140,6 +175,8 @@
 				5BB3697520DED27F00BEA616 /* SignUpViewController.swift */,
 				5BB3697720DED29100BEA616 /* ResetPasswordViewController.swift */,
 				5BB369BD20E2DF6000BEA616 /* HomeViewController.swift */,
+				5BB369BF20E557B800BEA616 /* AddCardViewController.swift */,
+				5B3D08E820ED72A100F0542D /* LauncherViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -200,6 +237,7 @@
 		5BB369B920E2C82E00BEA616 /* theme */ = {
 			isa = PBXGroup;
 			children = (
+				5BE0D0F520ED548000722557 /* Design */,
 				5BB369BA20E2C83A00BEA616 /* Buttons */,
 				5BB3698120DFFF8700BEA616 /* TextFields */,
 			);
@@ -209,26 +247,19 @@
 		5BB369BA20E2C83A00BEA616 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				5BE0D0F620ED559E00722557 /* LinearGradientButton.swift */,
 				5BB369B720E2C82300BEA616 /* ButtonPrimary.swift */,
+				5B3D08E320ED63E800F0542D /* SecondaryButton.swift */,
 			);
 			name = Buttons;
 			sourceTree = "<group>";
 		};
-		890243FC504C8DA4B1882F4E /* Pods */ = {
+		5BE0D0F520ED548000722557 /* Design */ = {
 			isa = PBXGroup;
 			children = (
-				3645A80314C6698D6AD0BB09 /* Pods-ShopCard.debug.xcconfig */,
-				F5CCBA313623350FE6775F1A /* Pods-ShopCard.release.xcconfig */,
+				5BE0D0F320ED46C700722557 /* RadialGradientLayer.swift */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		97D514B68543E144A4FCCA6B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2BE6157A2DDD644A30B2834F /* Pods_ShopCard.framework */,
-			);
-			name = Frameworks;
+			name = Design;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,11 +269,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B5D914120DAE1C400C5ABAF /* Build configuration list for PBXNativeTarget "ShopCard" */;
 			buildPhases = (
-				4DD3AAA9929A802035256A2C /* [CP] Check Pods Manifest.lock */,
+				9254483FB6BFAD2F44027973 /* [CP] Check Pods Manifest.lock */,
 				5B5D912B20DAE1C400C5ABAF /* Sources */,
 				5B5D912C20DAE1C400C5ABAF /* Frameworks */,
 				5B5D912D20DAE1C400C5ABAF /* Resources */,
-				74102F575E3567302B6C5079 /* [CP] Embed Pods Frameworks */,
+				D668FA0D1D2982301269C80D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -302,7 +333,6 @@
 				5BB369AC20E2C5A500BEA616 /* Roboto-Medium.ttf in Resources */,
 				5BB369AA20E2C5A500BEA616 /* Roboto-Light.ttf in Resources */,
 				5BB369A720E2C5A500BEA616 /* Roboto-Bold.ttf in Resources */,
-				5BB3698D20E0074B00BEA616 /* shopCardLogo.png in Resources */,
 				5BB369A820E2C5A500BEA616 /* Roboto-BoldItalic.ttf in Resources */,
 				5BB369AF20E2C5A500BEA616 /* Roboto-Thin.ttf in Resources */,
 				5BB369B120E2C5A500BEA616 /* RobotoCondensed-Bold.ttf in Resources */,
@@ -325,7 +355,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4DD3AAA9929A802035256A2C /* [CP] Check Pods Manifest.lock */ = {
+		9254483FB6BFAD2F44027973 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -343,22 +373,34 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		74102F575E3567302B6C5079 /* [CP] Embed Pods Frameworks */ = {
+		D668FA0D1D2982301269C80D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ShopCard/Pods-ShopCard-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -374,6 +416,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B3D08E420ED63E800F0542D /* SecondaryButton.swift in Sources */,
+				5B3D08E720ED6AED00F0542D /* Colors.swift in Sources */,
+				5BB369C020E557B800BEA616 /* AddCardViewController.swift in Sources */,
+				5BE0D0F420ED46C700722557 /* RadialGradientLayer.swift in Sources */,
+				5BE0D0F720ED559E00722557 /* LinearGradientButton.swift in Sources */,
 				5BB369B820E2C82300BEA616 /* ButtonPrimary.swift in Sources */,
 				5BB3697620DED27F00BEA616 /* SignUpViewController.swift in Sources */,
 				5BB3697320DED24D00BEA616 /* LoginViewController.swift in Sources */,
@@ -381,6 +428,7 @@
 				5BB3697820DED29100BEA616 /* ResetPasswordViewController.swift in Sources */,
 				5BB369BE20E2DF6000BEA616 /* HomeViewController.swift in Sources */,
 				5BB3698020DFFDF200BEA616 /* LoginScreenTextField.swift in Sources */,
+				5B3D08E920ED72A100F0542D /* LauncherViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,7 +541,7 @@
 		};
 		5B5D914220DAE1C400C5ABAF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3645A80314C6698D6AD0BB09 /* Pods-ShopCard.debug.xcconfig */;
+			baseConfigurationReference = 6D057BEF1D1F3A64D3C559EA /* Pods-ShopCard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ShopCard/Info.plist;
@@ -507,7 +555,7 @@
 		};
 		5B5D914320DAE1C400C5ABAF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F5CCBA313623350FE6775F1A /* Pods-ShopCard.release.xcconfig */;
+			baseConfigurationReference = BF7E12801A8AABA7A10184A5 /* Pods-ShopCard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ShopCard/Info.plist;

@@ -1,4 +1,4 @@
-# Uncomment the next line to define a global platform for your project
+7# Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
 target 'ShopCard' do
@@ -9,4 +9,5 @@ target 'ShopCard' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
+  pod 'Firebase/Firestore'
 end
