@@ -46,6 +46,7 @@
 		5BB369C020E557B800BEA616 /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB369BF20E557B800BEA616 /* AddCardViewController.swift */; };
 		5BE0D0F420ED46C700722557 /* RadialGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE0D0F320ED46C700722557 /* RadialGradientLayer.swift */; };
 		5BE0D0F720ED559E00722557 /* LinearGradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE0D0F620ED559E00722557 /* LinearGradientButton.swift */; };
+		5BF8609B20EE66290019C81C /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF8609A20EE66290019C81C /* CustomNavigationBar.swift */; };
 		6BFF0AD86872173CA7DE4F17 /* Pods_ShopCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98989EF70A5B7743CF31F3EF /* Pods_ShopCard.framework */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +92,7 @@
 		5BB369BF20E557B800BEA616 /* AddCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCardViewController.swift; sourceTree = "<group>"; };
 		5BE0D0F320ED46C700722557 /* RadialGradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadialGradientLayer.swift; sourceTree = "<group>"; };
 		5BE0D0F620ED559E00722557 /* LinearGradientButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearGradientButton.swift; sourceTree = "<group>"; };
+		5BF8609A20EE66290019C81C /* CustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		6D057BEF1D1F3A64D3C559EA /* Pods-ShopCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShopCard/Pods-ShopCard.debug.xcconfig"; sourceTree = "<group>"; };
 		98989EF70A5B7743CF31F3EF /* Pods_ShopCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShopCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF7E12801A8AABA7A10184A5 /* Pods-ShopCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopCard.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShopCard/Pods-ShopCard.release.xcconfig"; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				5BE0D0F320ED46C700722557 /* RadialGradientLayer.swift */,
+				5BF8609A20EE66290019C81C /* CustomNavigationBar.swift */,
 			);
 			name = Design;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 				5BE0D0F420ED46C700722557 /* RadialGradientLayer.swift in Sources */,
 				5BE0D0F720ED559E00722557 /* LinearGradientButton.swift in Sources */,
 				5BB369B820E2C82300BEA616 /* ButtonPrimary.swift in Sources */,
+				5BF8609B20EE66290019C81C /* CustomNavigationBar.swift in Sources */,
 				5BB3697620DED27F00BEA616 /* SignUpViewController.swift in Sources */,
 				5BB3697320DED24D00BEA616 /* LoginViewController.swift in Sources */,
 				5B5D913320DAE1C400C5ABAF /* AppDelegate.swift in Sources */,

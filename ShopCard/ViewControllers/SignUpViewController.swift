@@ -12,61 +12,62 @@ import FirebaseAuth
 
 class SignUpViewController: UIViewController {
 
-    @IBOutlet weak var usernameTextField: LoginScreenTextField!
-    @IBOutlet weak var emailTextField: LoginScreenTextField!
-    @IBOutlet weak var passwordTextField: LoginScreenTextField!
-    @IBOutlet weak var signUpBtn: ButtonPrimary!
-    @IBOutlet weak var errorLbl: UILabel!
+//    @IBOutlet weak var usernameTextField: LoginScreenTextField!
+//    @IBOutlet weak var emailTextField: LoginScreenTextField!
+//    @IBOutlet weak var passwordTextField: LoginScreenTextField!
+//    @IBOutlet weak var signUpBtn: ButtonPrimary!
+//    @IBOutlet weak var errorLbl: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        signUpBtn.addTarget(self, action: #selector(handleSignUp), for: .touchUpInside)
-        showHideError(show: false)
+//        signUpBtn.addTarget(self, action: #selector(handleSignUp), for: .touchUpInside)
+//        showHideError(show: false)
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
     /**
       Enables or disables the signUpBtn
     */
-    func setSignUpBtn(enabled: Bool) {
-        if (enabled) {
-            signUpBtn.alpha = 1.0
-            signUpBtn.isEnabled = true
-        } else {
-            signUpBtn.alpha = 0.5
-            signUpBtn.isEnabled = false
-        }
-    }
+//    func setSignUpBtn(enabled: Bool) {
+//        if (enabled) {
+//            signUpBtn.alpha = 1.0
+//            signUpBtn.isEnabled = true
+//        } else {
+//            signUpBtn.alpha = 0.5
+//            signUpBtn.isEnabled = false
+//        }
+//    }
+//    
+//    @objc func handleSignUp() {
+//        guard let username = usernameTextField.text else { return }
+//        guard let email = emailTextField.text else { return }
+//        guard let password = passwordTextField.text else { return }
+//        
+//        setSignUpBtn(enabled: false)
+//        showHideError(show: false)
+//        
+//        
+//        Auth.auth().createUser(withEmail: email, password: password) { user, error in
+//            if (error == nil && user != nil ) {
+//                print("User created!")
+//                
+//                let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
+//                changeRequest?.displayName = username
+//                changeRequest?.commitChanges { error in
+//                    if (error == nil) {
+//                        print("User display name changed!");
+//                        self.dismiss(animated: false, completion: nil)
+//                    }
+//                }
+//            } else {
+//                print("Error creating user: \(error!.localizedDescription)")
+//                self.showHideError(show: true, message: error!.localizedDescription)
+//            }
+//        }
     
-    @objc func handleSignUp() {
-        guard let username = usernameTextField.text else { return }
-        guard let email = emailTextField.text else { return }
-        guard let password = passwordTextField.text else { return }
-        
-        setSignUpBtn(enabled: false)
-        showHideError(show: false)
-        
-        
-        Auth.auth().createUser(withEmail: email, password: password) { user, error in
-            if (error == nil && user != nil ) {
-                print("User created!")
-                
-                let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
-                changeRequest?.displayName = username
-                changeRequest?.commitChanges { error in
-                    if (error == nil) {
-                        print("User display name changed!");
-                        self.dismiss(animated: false, completion: nil)
-                    }
-                }
-            } else {
-                print("Error creating user: \(error!.localizedDescription)")
-                self.showHideError(show: true, message: error!.localizedDescription)
-            }
-        }
-        
 //        if (emailTextField.text == "") {
 //            let alertController = UIAlertController(title: "Error", message: "Please enter your email and password", preferredStyle:.alert)
 //            
@@ -91,11 +92,11 @@ class SignUpViewController: UIViewController {
 //                }
 //            }
 //        }
-    }
+//    }
     
-    @objc func showHideError(show: Bool = false, message: String = "") {
-        self.errorLbl.text = message
-        self.errorLbl.isHidden = !show
-    }
+//    @objc func showHideError(show: Bool = false, message: String = "") {
+//        self.errorLbl.text = message
+//        self.errorLbl.isHidden = !show
+//    }
 
 }

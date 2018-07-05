@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="QNe-Iu-RDF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="r0H-Dm-pv9">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,120 +9,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="NeoSans Black Italic.otf">
-            <string>NeoSans-BlackItalic</string>
-        </array>
         <array key="Roboto-Black.ttf">
             <string>Roboto-Black</string>
         </array>
         <array key="Roboto-Medium.ttf">
             <string>Roboto-Medium</string>
         </array>
-        <array key="Roboto-Regular.ttf">
-            <string>Roboto-Regular</string>
-        </array>
     </customFonts>
     <scenes>
-        <!--Login View Controller-->
-        <scene sceneID="7uf-jN-rNN">
-            <objects>
-                <viewController id="4CW-nz-yIK" customClass="LoginViewController" customModule="ShopCard" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="MQi-vM-36p"/>
-                        <viewControllerLayoutGuide type="bottom" id="SPv-20-6bK"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="qyI-U6-8vC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YpI-dQ-eV0">
-                                <rect key="frame" x="37" y="619" width="140" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
-                                <state key="normal" title="Don't have an account?">
-                                    <color key="titleColor" red="1" green="0.53725490196078429" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="2Zq-SY-3Pi" kind="presentation" id="VC6-yK-NoO"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sm1-sS-aJ5">
-                                <rect key="frame" x="240" y="619" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
-                                <state key="normal" title="Forgot password?">
-                                    <color key="titleColor" red="1" green="0.5450980392" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Xpj-Hj-rCS" kind="presentation" id="ppq-eI-auj"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="tfA-gO-rDk" customClass="LoginScreenTextField" customModule="ShopCard" customModuleProvider="target">
-                                <rect key="frame" x="37" y="325" width="300" height="50"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cF0-I1-Ywj" customClass="LoginScreenTextField" customModule="ShopCard" customModuleProvider="target">
-                                <rect key="frame" x="37" y="380" width="300" height="50"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
-                            <button opaque="NO" tag="2" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0AU-bQ-6L7" customClass="ButtonPrimary" customModule="ShopCard" customModuleProvider="target">
-                                <rect key="frame" x="37" y="496" width="300" height="50"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.54509803921568623" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="17"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ShopCard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uck-T9-Uu3">
-                                <rect key="frame" x="0.0" y="181" width="375" height="39"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="NeoSans-BlackItalic" family="NeoSans" pointSize="30"/>
-                                <color key="textColor" red="1" green="0.53725490200000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="highlightedColor" red="0.88627450980392153" green="0.44705882352941173" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="shadowColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="0.38968211206896552" colorSpace="calibratedRGB"/>
-                                <size key="shadowOffset" width="2" height="2"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="F2c-r7-A0O">
-                                <rect key="frame" x="162" y="114" width="51" height="57"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo-old" translatesAutoresizingMaskIntoConstraints="NO" id="2Dh-bj-0oe">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="284"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Error message" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgB-Sa-TWL">
-                                <rect key="frame" x="37" y="438" width="300" height="50"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
-                                <color key="textColor" red="0.89041526845637586" green="0.0" blue="0.096528942953020114" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="EmailTextField" destination="tfA-gO-rDk" id="sgF-Oo-T0g"/>
-                        <outlet property="LoginBtn" destination="0AU-bQ-6L7" id="6sv-OZ-EVh"/>
-                        <outlet property="PasswordTextField" destination="cF0-I1-Ywj" id="FHD-hE-eDh"/>
-                        <outlet property="emailTextField" destination="tfA-gO-rDk" id="SfU-Ha-iLX"/>
-                        <outlet property="errorLbl" destination="kgB-Sa-TWL" id="0X4-VS-qoJ"/>
-                        <outlet property="loginBtn" destination="0AU-bQ-6L7" id="iBW-YX-3ym"/>
-                        <outlet property="passwordTextField" destination="cF0-I1-Ywj" id="FBO-eB-hz4"/>
-                        <segue destination="0vs-xK-e88" kind="presentation" identifier="toHomeScreen" id="8Ge-Th-MPk"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="P0d-U6-bNG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-167.19999999999999" y="133.5832083958021"/>
-        </scene>
         <!--Launcher View Controller-->
         <scene sceneID="Y6E-DA-OVr">
             <objects>
@@ -144,12 +38,18 @@
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                         <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
                                         <state key="normal" title="Login"/>
+                                        <connections>
+                                            <segue destination="tpP-pk-Vh5" kind="show" id="jbz-07-CPy"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cps-MJ-Rnq" customClass="SecondaryButton" customModule="ShopCard" customModuleProvider="target">
                                         <rect key="frame" x="33" y="528" width="310" height="46"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                         <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
                                         <state key="normal" title="Signup"/>
+                                        <connections>
+                                            <segue destination="JVB-LF-2B0" kind="show" id="Txi-5v-Xja"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Sx-hs-oBZ">
                                         <rect key="frame" x="140" y="582" width="97" height="22"/>
@@ -165,6 +65,9 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <segue destination="av8-CM-WGw" kind="show" id="xEI-9A-PNI"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HiT-zf-iw8">
                                         <rect key="frame" x="123" y="90" width="128" height="28"/>
@@ -187,113 +90,123 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Jwy-QX-PhS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JEy-Nl-KcF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-167.19999999999999" y="993.55322338830592"/>
+            <point key="canvasLocation" x="772" y="993.55322338830592"/>
         </scene>
-        <!--Sign Up View Controller-->
-        <scene sceneID="xsJ-Te-34E">
+        <!--Login View Controller-->
+        <scene sceneID="NDX-xP-xaH">
             <objects>
-                <viewController id="2Zq-SY-3Pi" customClass="SignUpViewController" customModule="ShopCard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tpP-pk-Vh5" customClass="LoginViewController" customModule="ShopCard" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="gA4-jX-fSB"/>
-                        <viewControllerLayoutGuide type="bottom" id="e5n-Nd-c9e"/>
+                        <viewControllerLayoutGuide type="top" id="u36-PB-TEi"/>
+                        <viewControllerLayoutGuide type="bottom" id="wss-NR-E3F"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="3iM-yX-epb">
+                    <view key="view" contentMode="scaleToFill" id="Jhn-eG-1uO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="30H-ug-ZNv" customClass="LoginScreenTextField" customModule="ShopCard" customModuleProvider="target">
-                                <rect key="frame" x="37" y="325" width="300" height="50"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="iG1-Ba-ly2" customClass="LoginScreenTextField" customModule="ShopCard" customModuleProvider="target">
-                                <rect key="frame" x="37" y="268" width="300" height="50"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vwu-pn-vzt" customClass="LoginScreenTextField" customModule="ShopCard" customModuleProvider="target">
-                                <rect key="frame" x="37" y="380" width="300" height="50"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwf-u6-yO6" customClass="ButtonPrimary" customModule="ShopCard" customModuleProvider="target">
-                                <rect key="frame" x="37" y="496" width="300" height="50"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.5450980392" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="17"/>
-                                <state key="normal" title="Sign Up">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ShopCard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ew6-UG-D15">
-                                <rect key="frame" x="0.0" y="181" width="375" height="39"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="NeoSans-BlackItalic" family="NeoSans" pointSize="30"/>
-                                <color key="textColor" red="1" green="0.53725490200000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="highlightedColor" red="0.8862745098" green="0.44705882349999998" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="shadowColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="0.38968211209999998" colorSpace="calibratedRGB"/>
-                                <size key="shadowOffset" width="2" height="2"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="3qf-6v-dqK">
-                                <rect key="frame" x="162" y="114" width="51" height="57"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLk-a7-L76">
-                                <rect key="frame" x="37" y="619" width="140" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleColor" red="1" green="0.53725490200000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="4CW-nz-yIK" kind="presentation" id="heq-sC-lzt"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTS-bx-kRA">
-                                <rect key="frame" x="240" y="619" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
-                                <state key="normal" title="Forgot password?">
-                                    <color key="titleColor" red="1" green="0.5450980392" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Xpj-Hj-rCS" kind="presentation" id="ZHe-KI-1w3"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="headerAbstractShape" translatesAutoresizingMaskIntoConstraints="NO" id="sKj-R2-cCn">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="284"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Error message" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncj-7b-d39">
-                                <rect key="frame" x="37" y="438" width="300" height="50"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
-                                <color key="textColor" red="0.89041526849999997" green="0.0" blue="0.096528942950000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QkZ-bV-vFf" customClass="RadialGradientLayer" customModule="ShopCard" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KnM-aY-mcE">
+                                        <rect key="frame" x="33" y="86" width="58" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="22"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3q-T8-w9e" customClass="LinearGradientButton" customModule="ShopCard" customModuleProvider="target">
+                                        <rect key="frame" x="32" y="363" width="310" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                                        <state key="normal" title="Login"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aGC-E9-T9s">
+                                        <rect key="frame" x="139" y="423" width="97" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Forgot Password?">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.61960784313725492" green="0.6470588235294118" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="11" name="Roboto-Light"/>
+                                                        <integer key="NSUnderline" value="1"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <segue destination="av8-CM-WGw" kind="show" id="dWh-jf-mSn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fGw-PK-1yb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-167.19999999999999" y="1853.5232383808097"/>
+        </scene>
+        <!--Reset Password View Controller-->
+        <scene sceneID="yS2-As-nVH">
+            <objects>
+                <viewController id="av8-CM-WGw" customClass="ResetPasswordViewController" customModule="ShopCard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZE5-uj-uEz"/>
+                        <viewControllerLayoutGuide type="bottom" id="YLF-5n-fEP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aj9-o0-dg0" customClass="RadialGradientLayer" customModule="ShopCard" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password reset" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mnq-mi-liB">
+                                <rect key="frame" x="33" y="86" width="154" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="22"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <outlet property="emailTextField" destination="30H-ug-ZNv" id="Cyk-To-MfX"/>
-                        <outlet property="errorLbl" destination="ncj-7b-d39" id="Saj-yf-dwP"/>
-                        <outlet property="passwordTextField" destination="vwu-pn-vzt" id="80p-Zg-X8z"/>
-                        <outlet property="signUpBtn" destination="xwf-u6-yO6" id="M6e-rV-IjX"/>
-                        <outlet property="usernameTextField" destination="iG1-Ba-ly2" id="qLS-UM-oKU"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Hmp-kI-CdY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zlc-bJ-KoJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="900" y="134"/>
+            <point key="canvasLocation" x="748" y="1853.5232383808097"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="w5V-tg-rW5">
+            <objects>
+                <viewController id="JVB-LF-2B0" customClass="SignUpViewController" customModule="ShopCard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0tH-HM-0Nz"/>
+                        <viewControllerLayoutGuide type="bottom" id="9OJ-KQ-pOm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fMA-rW-SuC" customClass="RadialGradientLayer" customModule="ShopCard" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Signup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0I-0X-he9">
+                                <rect key="frame" x="33" y="86" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="22"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tk5-ZA-Jp7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1490" y="1856"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="vua-bn-6N3">
@@ -339,7 +252,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mia-DT-6wf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="900" y="993.55322338830592"/>
+            <point key="canvasLocation" x="1839.2" y="993.55322338830592"/>
         </scene>
         <!--Add Card View Controller-->
         <scene sceneID="5Ze-bd-0pZ">
@@ -419,107 +332,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NSO-jT-YD1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1911.2" y="989.95502248875573"/>
+            <point key="canvasLocation" x="2850.4000000000001" y="989.95502248875573"/>
         </scene>
-        <!--Reset Password View Controller-->
-        <scene sceneID="mTE-4r-03g">
+        <!--Navigation Controller-->
+        <scene sceneID="Ygz-Pg-nXb">
             <objects>
-                <viewController id="Xpj-Hj-rCS" customClass="ResetPasswordViewController" customModule="ShopCard" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="oyu-ha-RIX"/>
-                        <viewControllerLayoutGuide type="bottom" id="YP7-GW-Wg3"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="6Lq-9V-ezr">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1G-0Y-bJb">
-                                <rect key="frame" x="37" y="617" width="140" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleColor" red="1" green="0.53725490200000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="4CW-nz-yIK" kind="presentation" id="68u-BZ-P41"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYR-C4-hqo">
-                                <rect key="frame" x="211" y="617" width="126" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
-                                <state key="normal" title="Don't have an account?">
-                                    <color key="titleColor" red="1" green="0.5450980392" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="2Zq-SY-3Pi" kind="presentation" id="hcZ-0A-ACU"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBv-0r-ybo" customClass="ButtonPrimary" customModule="ShopCard" customModuleProvider="target">
-                                <rect key="frame" x="37" y="496" width="300" height="50"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.5450980392" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="17"/>
-                                <state key="normal" title="Reset password">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ShopCard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwH-G3-tJf">
-                                <rect key="frame" x="0.0" y="176" width="375" height="39"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="NeoSans-BlackItalic" family="NeoSans" pointSize="30"/>
-                                <color key="textColor" red="1" green="0.53725490200000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="highlightedColor" red="0.8862745098" green="0.44705882349999998" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="shadowColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="0.38968211209999998" colorSpace="calibratedRGB"/>
-                                <size key="shadowOffset" width="2" height="2"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Tws-b2-Q0u">
-                                <rect key="frame" x="154" y="114" width="51" height="57"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0nH-Q6-YRZ" customClass="LoginScreenTextField" customModule="ShopCard" customModuleProvider="target">
-                                <rect key="frame" x="37" y="325" width="300" height="50"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="headerAbstractShape" translatesAutoresizingMaskIntoConstraints="NO" id="2JC-tY-Vbm">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="284"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Error message" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ENQ-CJ-eEe">
-                                <rect key="frame" x="37" y="392" width="300" height="50"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
-                                <color key="textColor" red="0.89041526849999997" green="0.0" blue="0.096528942950000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="r0H-Dm-pv9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="4gW-6F-lhX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <edgeInsets key="layoutMargins" top="8" left="50" bottom="8" right="8"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="22"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
                     <connections>
-                        <outlet property="ResetPasswrodBtn" destination="uBv-0r-ybo" id="V8S-IP-E6w"/>
-                        <outlet property="emailTextField" destination="0nH-Q6-YRZ" id="54z-k2-qg2"/>
-                        <outlet property="errorLbl" destination="ENQ-CJ-eEe" id="F1B-Yf-LjL"/>
-                        <outlet property="resetPasswrodBtn" destination="uBv-0r-ybo" id="eS4-Xi-S9C"/>
+                        <segue destination="QNe-Iu-RDF" kind="relationship" relationship="rootViewController" id="bQj-rb-tpt"/>
                     </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="q6z-tI-Sjs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o8s-mv-eoN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1938" y="134"/>
+            <point key="canvasLocation" x="-167.19999999999999" y="993.55322338830592"/>
         </scene>
     </scenes>
     <resources>
         <image name="Logo" width="154" height="139"/>
         <image name="ShopCard" width="114" height="26"/>
-        <image name="headerAbstractShape" width="375" height="321"/>
-        <image name="logo" width="51" height="57"/>
-        <image name="logo-old" width="51" height="57"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="68u-BZ-P41"/>
-        <segue reference="ppq-eI-auj"/>
-        <segue reference="VC6-yK-NoO"/>
+        <segue reference="dWh-jf-mSn"/>
     </inferredMetricsTieBreakers>
 </document>
