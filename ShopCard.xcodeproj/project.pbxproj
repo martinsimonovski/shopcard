@@ -48,6 +48,7 @@
 		5BE0D0F420ED46C700722557 /* RadialGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE0D0F320ED46C700722557 /* RadialGradientLayer.swift */; };
 		5BE0D0F720ED559E00722557 /* LinearGradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE0D0F620ED559E00722557 /* LinearGradientButton.swift */; };
 		5BF8609B20EE66290019C81C /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF8609A20EE66290019C81C /* CustomNavigationBar.swift */; };
+		5BFBDE6720F2D5DC00F9A794 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B5D913E20DAE1C400C5ABAF /* Info.plist */; };
 		6BFF0AD86872173CA7DE4F17 /* Pods_ShopCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98989EF70A5B7743CF31F3EF /* Pods_ShopCard.framework */; };
 /* End PBXBuildFile section */
 
@@ -349,6 +350,7 @@
 				5BB369A620E2C5A500BEA616 /* Roboto-BlackItalic.ttf in Resources */,
 				5B5D913A20DAE1C400C5ABAF /* Assets.xcassets in Resources */,
 				5BB369B320E2C5A500BEA616 /* RobotoCondensed-Italic.ttf in Resources */,
+				5BFBDE6720F2D5DC00F9A794 /* Info.plist in Resources */,
 				5BB369A520E2C5A500BEA616 /* Roboto-Black.ttf in Resources */,
 				5BB369A920E2C5A500BEA616 /* Roboto-Italic.ttf in Resources */,
 				5BB369AE20E2C5A500BEA616 /* Roboto-Regular.ttf in Resources */,

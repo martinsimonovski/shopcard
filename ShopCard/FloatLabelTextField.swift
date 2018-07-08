@@ -18,6 +18,7 @@ import UIKit
     
     let animationDuration = 0.3
     var title = UILabel()
+    var border = CALayer()
     
     // MARK:- Properties
     override var accessibilityLabel:String? {
@@ -148,7 +149,7 @@ import UIKit
         borderStyle = UITextBorderStyle.none
         tintColor = UIColor.Custom.Text.accent
         textColor = UIColor.Custom.Text.black
-        titleFont = UIFont(name: "Roboto", size: 14.0)!
+        titleFont = UIFont(name: "Roboto-Medium", size: 14.0)!
         titleActiveTextColour = tintColor
         
         setupPlaceholder()
@@ -156,9 +157,17 @@ import UIKit
         setupTitleLabel()        
         
         self.addSubview(title)
+        self.addTarget(self, action: #selector(editStart), for: UIControlEvents.editingDidBegin);
+        self.addTarget(self, action: #selector(editEnd), for: UIControlEvents.editingDidEnd);
     }
     
+    func editStart() {
+        isBorderActive(isActive: true)
+    }
     
+    func editEnd() {
+        isBorderActive(isActive: false)
+    }
     
     fileprivate func maxTopInset()->CGFloat {
         if let fnt = font {
@@ -202,7 +211,6 @@ import UIKit
     }
     
     func setupBorder() {
-        let border = CALayer()
         let width = CGFloat(1.0)
         border.borderColor = UIColor.Custom.Text.grey.cgColor
         border.frame = CGRect(x: 0, y: self.frame.size.height - width, width: self.frame.size.width, height: self.frame.size.height)
@@ -215,10 +223,11 @@ import UIKit
     func setupPlaceholder() {
         let attributes = [
             NSForegroundColorAttributeName: UIColor.Custom.Text.grey,
-            NSFontAttributeName : UIFont(name: "Roboto-LightItalic", size: 14)! // Note the !
+            NSFontAttributeName: UIFont(name: "Roboto-LightItalic", size: 14.0)!
         ]
-        attributedPlaceholder = NSAttributedString(string: placeholder!, attributes:attributes)
-
+        
+        let placeholderText = placeholder ?? ""
+        attributedPlaceholder = NSMutableAttributedString(string: placeholderText, attributes: attributes)
     }
     
     func setupTitleLabel() {
@@ -228,6 +237,14 @@ import UIKit
         if let str = placeholder , !str.isEmpty {
             title.text = str
             title.sizeToFit()
+        }
+    }
+    
+    func isBorderActive(isActive:Bool ) {
+        if (isActive) {
+            border.borderColor = UIColor.Custom.Text.accent.cgColor
+        } else {
+            border.borderColor = UIColor.Custom.Text.grey.cgColor
         }
     }
 }
