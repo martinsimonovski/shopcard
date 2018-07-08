@@ -17,14 +17,15 @@ class SignUpViewController: UIViewController {
 //    @IBOutlet weak var passwordTextField: LoginScreenTextField!
 //    @IBOutlet weak var signUpBtn: ButtonPrimary!
 //    @IBOutlet weak var errorLbl: UILabel!
+    @IBOutlet weak var errorLbl: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        showHideError(show: false)
 
         // Do any additional setup after loading the view.
 //        signUpBtn.addTarget(self, action: #selector(handleSignUp), for: .touchUpInside)
-//        showHideError(show: false)
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
@@ -94,9 +95,9 @@ class SignUpViewController: UIViewController {
 //        }
 //    }
     
-//    @objc func showHideError(show: Bool = false, message: String = "") {
-//        self.errorLbl.text = message
-//        self.errorLbl.isHidden = !show
-//    }
+    @objc func showHideError(show: Bool = false, message: String = "") {
+        self.errorLbl.text = message
+        self.errorLbl.isHidden = !show
+    }
 
 }

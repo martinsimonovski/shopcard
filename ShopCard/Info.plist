@@ -46,6 +46,8 @@
 	<string>NeoSans Black Italic.otf</string>
 	<key>Item 2</key>
 	<string>Roboto-Black.ttf</string>
+	<key>Item 3</key>
+	<string>Roboto-LightItalic.ttf</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

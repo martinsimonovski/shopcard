@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class LauncherViewController: UIViewController {
 
@@ -16,11 +18,6 @@ class LauncherViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         setNavigationBar()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func setNavigationBar() {
@@ -41,6 +38,14 @@ class LauncherViewController: UIViewController {
         navigationController?.navigationBar.backIndicatorImage = #imageLiteral(resourceName: "Shape")
         navigationController?.navigationBar.backIndicatorTransitionMaskImage = #imageLiteral(resourceName: "Shape")
         navigationController?.navigationBar.tintColor = UIColor.Custom.Text.link
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if let user = Auth.auth().currentUser  {
+            self.performSegue(withIdentifier: "toHomeScreen", sender: self)
+        }
     }
 
 }
