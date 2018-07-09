@@ -35,7 +35,7 @@ class ResetPasswordViewController: UIViewController {
             
             if (error == nil) {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                    self.performSegue(withIdentifier: "toHomeScreen", sender: self)
+                    self.performSegue(withIdentifier: "toLaunchScreen", sender: self)
                 }                
             } else {
                 self.errorLbl.text = (error?.localizedDescription)
