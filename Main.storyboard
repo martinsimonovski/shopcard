@@ -100,7 +100,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JEy-Nl-KcF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="772" y="993.55322338830592"/>
+            <point key="canvasLocation" x="727" y="994"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="NDX-xP-xaH">
@@ -194,7 +194,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fGw-PK-1yb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-167.19999999999999" y="1853.5232383808097"/>
+            <point key="canvasLocation" x="1502" y="1472"/>
         </scene>
         <!--Reset Password View Controller-->
         <scene sceneID="yS2-As-nVH">
@@ -249,7 +249,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zlc-bJ-KoJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="748" y="1853.5232383808097"/>
+            <point key="canvasLocation" x="-66" y="1836"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="w5V-tg-rW5">
@@ -328,58 +328,81 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tk5-ZA-Jp7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1490" y="1856"/>
+            <point key="canvasLocation" x="1503" y="556"/>
         </scene>
-        <!--Home View Controller-->
-        <scene sceneID="vua-bn-6N3">
+        <!--Actions-->
+        <scene sceneID="yeu-Fo-dU6">
             <objects>
-                <viewController id="0vs-xK-e88" customClass="HomeViewController" customModule="ShopCard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Actions" id="b7m-q2-Q3P" customClass="ActionsViewController" customModule="ShopCard" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Vs5-Ur-LB5"/>
-                        <viewControllerLayoutGuide type="bottom" id="U6V-Wb-4yF"/>
+                        <viewControllerLayoutGuide type="top" id="LPv-DN-KJf"/>
+                        <viewControllerLayoutGuide type="bottom" id="4Ol-WM-Vep"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="7kh-LO-nZt">
+                    <view key="view" contentMode="scaleToFill" id="rIa-60-zbL" customClass="RadialGradientLayer" customModule="ShopCard" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Logged in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61R-BM-GtD">
-                                <rect key="frame" x="149" y="296" width="76" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tgx-aw-5Hk">
-                                <rect key="frame" x="157" y="338" width="61" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Log Out"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8p-28-CRK" customClass="SecondaryButton" customModule="ShopCard" customModuleProvider="target">
+                                <rect key="frame" x="32" y="601" width="310" height="46"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="Logout"/>
                                 <connections>
-                                    <action selector="handleLogoutWith_target:" destination="0vs-xK-e88" eventType="touchUpInside" id="t9Y-9F-v0d"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cU6-KH-Ibs">
-                                <rect key="frame" x="172" y="170" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="+"/>
-                                <connections>
-                                    <segue destination="apn-tc-aCH" kind="presentation" id="EwQ-vA-esh"/>
+                                    <action selector="handleLogoutWith_target:" destination="b7m-q2-Q3P" eventType="touchUpInside" id="2JZ-vy-iIt"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="logOutBtn" destination="Tgx-aw-5Hk" id="TJy-f2-a9R"/>
+                        <segue destination="QNe-Iu-RDF" kind="show" identifier="toLaunchScreen" id="bWo-Ie-K5T"/>
                     </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c2N-Ti-Xwl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3230" y="269"/>
+        </scene>
+        <!--Cards-->
+        <scene sceneID="vua-bn-6N3">
+            <objects>
+                <viewController title="Cards" id="0vs-xK-e88" customClass="HomeViewController" customModule="ShopCard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vs5-Ur-LB5"/>
+                        <viewControllerLayoutGuide type="bottom" id="U6V-Wb-4yF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7kh-LO-nZt" customClass="RadialGradientLayer" customModule="ShopCard" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8g-sQ-PaU" customClass="LinearGradientButton" customModule="ShopCard" customModuleProvider="target">
+                                <rect key="frame" x="33" y="580" width="310" height="46"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                                <state key="normal" title="Add Card"/>
+                                <connections>
+                                    <segue destination="apn-tc-aCH" kind="show" id="ApC-Hg-re2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cards" id="fCf-X2-rZG">
+                        <barButtonItem key="rightBarButtonItem" image="actions" id="cAy-y4-Lfd">
+                            <color key="tintColor" red="0.61960784313725492" green="0.6470588235294118" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="b7m-q2-Q3P" kind="show" id="FSz-JZ-tEn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mia-DT-6wf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1839.2" y="993.55322338830592"/>
+            <point key="canvasLocation" x="2296.8000000000002" y="993.55322338830592"/>
         </scene>
-        <!--Add Card View Controller-->
+        <!--Add Card-->
         <scene sceneID="5Ze-bd-0pZ">
             <objects>
-                <viewController id="apn-tc-aCH" customClass="AddCardViewController" customModule="ShopCard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Add Card" id="apn-tc-aCH" customClass="AddCardViewController" customModule="ShopCard" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hZh-oM-Mj5"/>
                         <viewControllerLayoutGuide type="bottom" id="Zma-gP-CUB"/>
@@ -454,7 +477,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NSO-jT-YD1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2850.4000000000001" y="989.95502248875573"/>
+            <point key="canvasLocation" x="3230" y="1017"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ygz-Pg-nXb">
@@ -477,16 +500,17 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o8s-mv-eoN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-167.19999999999999" y="993.55322338830592"/>
+            <point key="canvasLocation" x="-186" y="973"/>
         </scene>
     </scenes>
     <resources>
         <image name="Logo" width="154" height="139"/>
         <image name="ShopCard" width="114" height="26"/>
+        <image name="actions" width="23" height="5"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bQj-rb-tpt"/>
-        <segue reference="dWh-jf-mSn"/>
-        <segue reference="QVZ-Pv-5H5"/>
+        <segue reference="zRQ-Rr-qU0"/>
+        <segue reference="LOP-6t-5dF"/>
+        <segue reference="xEI-9A-PNI"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -1,8 +1,8 @@
 //
-//  HomeViewController.swift
+//  ActionsViewController.swift
 //  ShopCard
 //
-//  Created by Martin Simonovski on 6/26/18.
+//  Created by Martin Simonovski on 7/9/18.
 //  Copyright © 2018 Martin Simonovski. All rights reserved.
 //
 
@@ -10,14 +10,17 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-class HomeViewController: UIViewController {
-   
+class ActionsViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
-        self.navigationItem.setHidesBackButton(true, animated: true)
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    }
+    
+    @IBAction func handleLogout(_target: UIButton) {
+        try! Auth.auth().signOut()
+        self.performSegue(withIdentifier: "toLaunchScreen", sender: self)
     }
 
 }
