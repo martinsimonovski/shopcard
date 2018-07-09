@@ -226,7 +226,7 @@
                                 <rect key="frame" x="32" y="297" width="310" height="46"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
-                                <state key="normal" title="Login"/>
+                                <state key="normal" title="Send link"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UcP-2A-eFH">
                                 <rect key="frame" x="32" y="219" width="310" height="50"/>
@@ -241,7 +241,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="emailTxt" destination="zFW-l7-JgS" id="Bxa-iz-uAw"/>
                         <outlet property="errorLbl" destination="UcP-2A-eFH" id="upx-Oa-fOb"/>
+                        <outlet property="resetBtn" destination="mXh-1C-tse" id="eyo-0K-cOB"/>
+                        <segue destination="QNe-Iu-RDF" kind="show" identifier="toHomeScreen" id="LOP-6t-5dF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zlc-bJ-KoJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -476,7 +479,8 @@
         <image name="ShopCard" width="114" height="26"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dWh-jf-mSn"/>
+        <segue reference="LOP-6t-5dF"/>
+        <segue reference="xEI-9A-PNI"/>
         <segue reference="9vR-Uo-coA"/>
     </inferredMetricsTieBreakers>
 </document>
