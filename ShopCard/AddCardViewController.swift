@@ -13,26 +13,70 @@ import FirebaseAuth
 
 class AddCardViewController: UIViewController {
 
-    @IBOutlet weak var nameTxt: UITextField!
-    @IBOutlet weak var typeTxt: UITextField!
-    @IBOutlet weak var serialNumberTxt: UITextField!
-    @IBOutlet weak var addCardBtn: UIButton!
+    @IBOutlet weak var nameTxt: FloatLabelTextField!
+    @IBOutlet weak var barcodeTxt: FloatLabelTextField!
+    @IBOutlet weak var ownerTxt: FloatLabelTextField!
+    @IBOutlet weak var addBtn: LinearGradientButton!
+    @IBOutlet weak var errorLbl: UILabel!
+    @IBOutlet weak var typesPicker: UIPickerView!
     
     var ref: DatabaseReference? = nil
     let db = Firestore.firestore()
+    var typeModelPicker: TypeModelPicker!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
+        showHideError(show: false)
         ref = Database.database().reference()
-        addCardBtn.addTarget(self, action: #selector(addCard), for: .touchUpInside)
+        
+        addBtn.addTarget(self, action: #selector(addCard), for: .touchUpInside)
+        
+        getTypes()
+    }
+
+    
+    
+    func setTypeModelPicker(types: [FirestoreTypeModel]) {
+        print("PICKER: ", types)
+        typeModelPicker = TypeModelPicker()
+        
+        typeModelPicker.modelData = types
+        
+        typesPicker.delegate = typeModelPicker
+        typesPicker.dataSource = typeModelPicker
+        typesPicker.reloadAllComponents()
+    }
+    
+    func getTypes() {
+        var types: [FirestoreTypeModel] = []
+        
+        db.collection("types").getDocuments() { (querySnapshot, error) in
+            if (error != nil) {
+                print("Error getting types: \(error)")
+            } else {
+                print("documents: ", querySnapshot!.documents)
+                for document in querySnapshot!.documents {
+                    let myData = document.data()
+                    
+                    print("\(document.documentID) => \(document.data())")
+                    let model: FirestoreTypeModel = FirestoreTypeModel(id: document.documentID, name: myData["name"] as! String, img: myData["img"] as! String)
+                    types.append(model)
+                }
+                
+                print("SHOPCARD: ", types)
+                self.setTypeModelPicker(types: types)
+            }
+        }
     }
 
     @objc func addCard() {
-//        guard let name = nameTxt.text else { return }
+        self.showHideError(show: false)
+        
+        guard let name = nameTxt.text else { return }
 //        guard let type = typeTxt.text else { return }
-//        guard let serialNumber = serialNumberTxt.text else { return }
+        guard let barcode = barcodeTxt.text else { return }
+        guard let owner = ownerTxt.text else { return }
+        
         print("addCard")
         
         
@@ -53,21 +97,27 @@ class AddCardViewController: UIViewController {
         let uid = Auth.auth().currentUser?.uid;
         print(uid!)
 
-        let barcode = String(arc4random_uniform(10000000))
         let data: [String : Any] = [
             barcode: [
+                "name": name,
                 "type": "tinex",
-                "number": barcode,
-                "owner": "John Doe"
+                "barcode": barcode,
+                "owner": owner
             ]
         ]
-        db.collection("cards").document(uid!).setData(data, merge: true)  { err in
-            if let err = err {
-                print("Error writing document: \(err)")
+        db.collection("cards").document(uid!).setData(data, merge: true)  { error in
+            if let error = error {
+                print("Error writing document: \(error)")
+                self.showHideError(show: true, message: error.localizedDescription)
             } else {
                 print("Document successfully written!")
             }
         }
+    }
+    
+    @objc func showHideError(show: Bool = false, message: String = "") {
+        self.errorLbl.text = message
+        self.errorLbl.isHidden = !show
     }
 
 }
