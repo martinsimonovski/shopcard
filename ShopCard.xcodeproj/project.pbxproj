@@ -167,6 +167,7 @@
 		5B5D913120DAE1C400C5ABAF /* ShopCard */ = {
 			isa = PBXGroup;
 			children = (
+				5BFBDE7120F6C0A900F9A794 /* services */,
 				5BFBDE6C20F54EEB00F9A794 /* model */,
 				5B3D08E520ED6AB700F0542D /* extensions */,
 				5BB369B920E2C82E00BEA616 /* theme */,
@@ -287,6 +288,13 @@
 				5BFBDE6F20F5582D00F9A794 /* FirestoreModel.swift */,
 			);
 			name = model;
+			sourceTree = "<group>";
+		};
+		5BFBDE7120F6C0A900F9A794 /* services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

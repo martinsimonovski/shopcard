@@ -10,8 +10,10 @@ import UIKit
 
 class TypeModelPicker: UIPickerView {
     var modelData: [FirestoreTypeModel]!
-    let customWidth: CGFloat = 310
-    let customHeight: CGFloat = 33
+    
+    // because they will rotate that is why they are reversed (the image is like that)
+    let customWidth: CGFloat = 80
+    let customHeight: CGFloat = 140
 }
 
 extension TypeModelPicker: UIPickerViewDataSource {
@@ -25,34 +27,39 @@ extension TypeModelPicker: UIPickerViewDataSource {
 }
 
 extension TypeModelPicker: UIPickerViewDelegate {
+    
     func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
         return customWidth
     }
     
+    func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
+        return customHeight
+    }
+    
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+
         let view = UIView(frame: CGRect(x: 0, y: 0, width: customWidth, height: customHeight))
-        
-        let label = UILabel(frame: CGRect(x: 75, y: 0, width: 100, height: customHeight))
-        label.text = modelData[row].name
-        label.textColor = UIColor.Custom.Text.black
-        label.textAlignment = .center
-        label.font = UIFont(name: "Roboto-Medium", size: 18.0)
-        
-        
-        let imageView = UIImageView(frame: CGRect(x: 175, y: 0, width: 60, height: 33))
+       
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: customHeight, height: customWidth))
         switch modelData[row].img {
             case "tinex":
-                imageView.image = UIImage(named: "tinex")
+                imageView.image = UIImage(named: "tinex-card")
             case "vero":
-                imageView.image = UIImage(named: "vero")
+                imageView.image = UIImage(named: "vero-card")
             case "ramstore":
-                imageView.image = UIImage(named: "ramstore")
+                imageView.image = UIImage(named: "ramstore-card")
+            case "zito":
+                imageView.image = UIImage(named: "zito-card")
             default:
                 imageView.image = nil
         }
-        imageView.contentMode = UIViewContentMode.scaleAspectFit
         
-        view.addSubview(label)
+        imageView.contentMode = UIViewContentMode.scaleAspectFit
+        var y = view.frame.origin.y
+        var x = view.frame.origin.x
+        view.transform = CGAffineTransform(rotationAngle: (90 * (.pi/180)))
+        view.frame = CGRect(x: x, y: y, width: customWidth, height: customHeight)
+
         view.addSubview(imageView)
         
         return view

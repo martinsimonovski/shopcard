@@ -24,13 +24,13 @@ class AddCardViewController: UIViewController {
     let db = Firestore.firestore()
     var typeModelPicker: TypeModelPicker!
     
+    var rotationAngle: CGFloat!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         showHideError(show: false)
         ref = Database.database().reference()
-        
         addBtn.addTarget(self, action: #selector(addCard), for: .touchUpInside)
-        
         getTypes()
     }
 
@@ -38,6 +38,13 @@ class AddCardViewController: UIViewController {
     
     func setTypeModelPicker(types: [FirestoreTypeModel]) {
         print("PICKER: ", types)
+        
+        rotationAngle = -90 * (.pi/180)
+        var y = typesPicker.frame.origin.y
+        var x = typesPicker.frame.origin.x
+        typesPicker.transform = CGAffineTransform(rotationAngle: rotationAngle)
+        typesPicker.frame = CGRect(x: x, y: y, width: 310, height: 80)
+        
         typeModelPicker = TypeModelPicker()
         
         typeModelPicker.modelData = types
@@ -45,6 +52,7 @@ class AddCardViewController: UIViewController {
         typesPicker.delegate = typeModelPicker
         typesPicker.dataSource = typeModelPicker
         typesPicker.reloadAllComponents()
+        
     }
     
     func getTypes() {
