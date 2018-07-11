@@ -10,11 +10,11 @@ import Foundation
 import FirebaseFirestore
 
 class FirestoreTypeModel {
-    var id: String = ""
+    var id: Int = 0
     var name: String = ""
     var img: String = ""
     
-    init(id: String, name: String, img: String) {
+    init(id: Int, name: String, img: String) {
         self.id = id
         self.name = name
         self.img = img

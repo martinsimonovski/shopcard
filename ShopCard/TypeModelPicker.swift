@@ -41,22 +41,24 @@ extension TypeModelPicker: UIPickerViewDelegate {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: customWidth, height: customHeight))
        
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: customHeight, height: customWidth))
-        switch modelData[row].img {
-            case "tinex":
-                imageView.image = UIImage(named: "tinex-card")
-            case "vero":
-                imageView.image = UIImage(named: "vero-card")
-            case "ramstore":
-                imageView.image = UIImage(named: "ramstore-card")
-            case "zito":
-                imageView.image = UIImage(named: "zito-card")
-            default:
-                imageView.image = nil
-        }
+        imageView.image = UIImage(named: modelData[row].img)
+        
+//        switch modelData[row].img {
+//            case "tinex":
+//                imageView.image = UIImage(named: "tinex-card")
+//            case "vero":
+//                imageView.image = UIImage(named: "vero-card")
+//            case "ramstore":
+//                imageView.image = UIImage(named: "ramstore-card")
+//            case "zito":
+//                imageView.image = UIImage(named: "zito-card")
+//            default:
+//                imageView.image = nil
+//        }
         
         imageView.contentMode = UIViewContentMode.scaleAspectFit
-        var y = view.frame.origin.y
-        var x = view.frame.origin.x
+        let y = view.frame.origin.y
+        let x = view.frame.origin.x
         view.transform = CGAffineTransform(rotationAngle: (90 * (.pi/180)))
         view.frame = CGRect(x: x, y: y, width: customWidth, height: customHeight)
 

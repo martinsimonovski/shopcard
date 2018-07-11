@@ -53,6 +53,7 @@
 		5BFBDE6B20F54EC700F9A794 /* TypeModelPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFBDE6A20F54EC700F9A794 /* TypeModelPicker.swift */; };
 		5BFBDE6E20F54F0700F9A794 /* FirestoreTypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFBDE6D20F54F0700F9A794 /* FirestoreTypeModel.swift */; };
 		5BFBDE7020F5582D00F9A794 /* FirestoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFBDE6F20F5582D00F9A794 /* FirestoreModel.swift */; };
+		5BFBDE7520F6C1D000F9A794 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFBDE7420F6C1D000F9A794 /* Types.swift */; };
 		6BFF0AD86872173CA7DE4F17 /* Pods_ShopCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98989EF70A5B7743CF31F3EF /* Pods_ShopCard.framework */; };
 /* End PBXBuildFile section */
 
@@ -104,6 +105,7 @@
 		5BFBDE6A20F54EC700F9A794 /* TypeModelPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeModelPicker.swift; sourceTree = "<group>"; };
 		5BFBDE6D20F54F0700F9A794 /* FirestoreTypeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirestoreTypeModel.swift; sourceTree = "<group>"; };
 		5BFBDE6F20F5582D00F9A794 /* FirestoreModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirestoreModel.swift; sourceTree = "<group>"; };
+		5BFBDE7420F6C1D000F9A794 /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 		6D057BEF1D1F3A64D3C559EA /* Pods-ShopCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShopCard/Pods-ShopCard.debug.xcconfig"; sourceTree = "<group>"; };
 		98989EF70A5B7743CF31F3EF /* Pods_ShopCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShopCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF7E12801A8AABA7A10184A5 /* Pods-ShopCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopCard.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShopCard/Pods-ShopCard.release.xcconfig"; sourceTree = "<group>"; };
@@ -167,7 +169,6 @@
 		5B5D913120DAE1C400C5ABAF /* ShopCard */ = {
 			isa = PBXGroup;
 			children = (
-				5BFBDE7120F6C0A900F9A794 /* services */,
 				5BFBDE6C20F54EEB00F9A794 /* model */,
 				5B3D08E520ED6AB700F0542D /* extensions */,
 				5BB369B920E2C82E00BEA616 /* theme */,
@@ -286,15 +287,9 @@
 			children = (
 				5BFBDE6D20F54F0700F9A794 /* FirestoreTypeModel.swift */,
 				5BFBDE6F20F5582D00F9A794 /* FirestoreModel.swift */,
+				5BFBDE7420F6C1D000F9A794 /* Types.swift */,
 			);
 			name = model;
-			sourceTree = "<group>";
-		};
-		5BFBDE7120F6C0A900F9A794 /* services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -455,6 +450,7 @@
 				5B3D08E420ED63E800F0542D /* SecondaryButton.swift in Sources */,
 				5B3D08E720ED6AED00F0542D /* Colors.swift in Sources */,
 				5BB369C020E557B800BEA616 /* AddCardViewController.swift in Sources */,
+				5BFBDE7520F6C1D000F9A794 /* Types.swift in Sources */,
 				5B7F951420F2A6ED000E3594 /* FloatLabelTextField.swift in Sources */,
 				5BE0D0F420ED46C700722557 /* RadialGradientLayer.swift in Sources */,
 				5BE0D0F720ED559E00722557 /* LinearGradientButton.swift in Sources */,

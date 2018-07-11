@@ -31,23 +31,20 @@ class AddCardViewController: UIViewController {
         showHideError(show: false)
         ref = Database.database().reference()
         addBtn.addTarget(self, action: #selector(addCard), for: .touchUpInside)
-        getTypes()
+        setupTypePicker()
     }
-
     
-    
-    func setTypeModelPicker(types: [FirestoreTypeModel]) {
-        print("PICKER: ", types)
+    func setupTypePicker() {
         
         rotationAngle = -90 * (.pi/180)
-        var y = typesPicker.frame.origin.y
-        var x = typesPicker.frame.origin.x
+        let y = typesPicker.frame.origin.y
+        let x = typesPicker.frame.origin.x
         typesPicker.transform = CGAffineTransform(rotationAngle: rotationAngle)
         typesPicker.frame = CGRect(x: x, y: y, width: 310, height: 80)
         
         typeModelPicker = TypeModelPicker()
         
-        typeModelPicker.modelData = types
+        typeModelPicker.modelData = Types.getTypes()
         
         typesPicker.delegate = typeModelPicker
         typesPicker.dataSource = typeModelPicker
@@ -55,27 +52,27 @@ class AddCardViewController: UIViewController {
         
     }
     
-    func getTypes() {
-        var types: [FirestoreTypeModel] = []
-        
-        db.collection("types").getDocuments() { (querySnapshot, error) in
-            if (error != nil) {
-                print("Error getting types: \(error)")
-            } else {
-                print("documents: ", querySnapshot!.documents)
-                for document in querySnapshot!.documents {
-                    let myData = document.data()
-                    
-                    print("\(document.documentID) => \(document.data())")
-                    let model: FirestoreTypeModel = FirestoreTypeModel(id: document.documentID, name: myData["name"] as! String, img: myData["img"] as! String)
-                    types.append(model)
-                }
-                
-                print("SHOPCARD: ", types)
-                self.setTypeModelPicker(types: types)
-            }
-        }
-    }
+//    func getTypes() {
+//        var types: [FirestoreTypeModel] = []
+//        
+//        db.collection("types").getDocuments() { (querySnapshot, error) in
+//            if (error != nil) {
+//                print("Error getting types: \(error)")
+//            } else {
+//                print("documents: ", querySnapshot!.documents)
+//                for document in querySnapshot!.documents {
+//                    let myData = document.data()
+//                    
+//                    print("\(document.documentID) => \(document.data())")
+//                    let model: FirestoreTypeModel = FirestoreTypeModel(id: document.documentID, name: myData["name"] as! String, img: myData["img"] as! String)
+//                    types.append(model)
+//                }
+//                
+//                print("SHOPCARD: ", types)
+//                self.setTypeModelPicker(types: types)
+//            }
+//        }
+//    }
 
     @objc func addCard() {
         self.showHideError(show: false)
