@@ -14,6 +14,9 @@
 		5B5D913A20DAE1C400C5ABAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B5D913920DAE1C400C5ABAF /* Assets.xcassets */; };
 		5B5D913D20DAE1C400C5ABAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B5D913B20DAE1C400C5ABAF /* LaunchScreen.storyboard */; };
 		5B7F951420F2A6ED000E3594 /* FloatLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7F951320F2A6ED000E3594 /* FloatLabelTextField.swift */; };
+		5B825C8820FFA7EA00069428 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B825C8720FFA7EA00069428 /* ViewControllerExtension.swift */; };
+		5B825C8B2100EFD600069428 /* ListCardsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B825C8A2100EFD600069428 /* ListCardsTableView.swift */; };
+		5B825C8D2100F03C00069428 /* FirestoreCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B825C8C2100F03C00069428 /* FirestoreCardModel.swift */; };
 		5BB3697320DED24D00BEA616 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB3697220DED24D00BEA616 /* LoginViewController.swift */; };
 		5BB3697620DED27F00BEA616 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB3697520DED27F00BEA616 /* SignUpViewController.swift */; };
 		5BB3697820DED29100BEA616 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB3697720DED29100BEA616 /* ResetPasswordViewController.swift */; };
@@ -67,6 +70,9 @@
 		5B5D913C20DAE1C400C5ABAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B5D913E20DAE1C400C5ABAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B7F951320F2A6ED000E3594 /* FloatLabelTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatLabelTextField.swift; sourceTree = "<group>"; };
+		5B825C8720FFA7EA00069428 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		5B825C8A2100EFD600069428 /* ListCardsTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCardsTableView.swift; sourceTree = "<group>"; };
+		5B825C8C2100F03C00069428 /* FirestoreCardModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirestoreCardModel.swift; sourceTree = "<group>"; };
 		5BB3697220DED24D00BEA616 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ViewControllers/LoginViewController.swift; sourceTree = "<group>"; };
 		5BB3697520DED27F00BEA616 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = ViewControllers/SignUpViewController.swift; sourceTree = "<group>"; };
 		5BB3697720DED29100BEA616 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResetPasswordViewController.swift; path = ViewControllers/ResetPasswordViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				5B3D08E620ED6AED00F0542D /* Colors.swift */,
+				5B825C8720FFA7EA00069428 /* ViewControllerExtension.swift */,
 			);
 			name = extensions;
 			sourceTree = "<group>";
@@ -195,6 +202,7 @@
 				5B3D08E820ED72A100F0542D /* LauncherViewController.swift */,
 				5BFBDE6820F3F5F700F9A794 /* ActionsViewController.swift */,
 				5BFBDE6A20F54EC700F9A794 /* TypeModelPicker.swift */,
+				5B825C8A2100EFD600069428 /* ListCardsTableView.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -288,6 +296,7 @@
 				5BFBDE6D20F54F0700F9A794 /* FirestoreTypeModel.swift */,
 				5BFBDE6F20F5582D00F9A794 /* FirestoreModel.swift */,
 				5BFBDE7420F6C1D000F9A794 /* Types.swift */,
+				5B825C8C2100F03C00069428 /* FirestoreCardModel.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -449,10 +458,12 @@
 			files = (
 				5B3D08E420ED63E800F0542D /* SecondaryButton.swift in Sources */,
 				5B3D08E720ED6AED00F0542D /* Colors.swift in Sources */,
+				5B825C8820FFA7EA00069428 /* ViewControllerExtension.swift in Sources */,
 				5BB369C020E557B800BEA616 /* AddCardViewController.swift in Sources */,
 				5BFBDE7520F6C1D000F9A794 /* Types.swift in Sources */,
 				5B7F951420F2A6ED000E3594 /* FloatLabelTextField.swift in Sources */,
 				5BE0D0F420ED46C700722557 /* RadialGradientLayer.swift in Sources */,
+				5B825C8B2100EFD600069428 /* ListCardsTableView.swift in Sources */,
 				5BE0D0F720ED559E00722557 /* LinearGradientButton.swift in Sources */,
 				5BFBDE6B20F54EC700F9A794 /* TypeModelPicker.swift in Sources */,
 				5BFBDE6920F3F5F700F9A794 /* ActionsViewController.swift in Sources */,
@@ -467,6 +478,7 @@
 				5BB369BE20E2DF6000BEA616 /* HomeViewController.swift in Sources */,
 				5BB3698020DFFDF200BEA616 /* LoginScreenTextField.swift in Sources */,
 				5B3D08E920ED72A100F0542D /* LauncherViewController.swift in Sources */,
+				5B825C8D2100F03C00069428 /* FirestoreCardModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

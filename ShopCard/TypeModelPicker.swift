@@ -10,10 +10,15 @@ import UIKit
 
 class TypeModelPicker: UIPickerView {
     var modelData: [FirestoreTypeModel]!
+    var selectedType: Int = 0
     
     // because they will rotate that is why they are reversed (the image is like that)
     let customWidth: CGFloat = 80
     let customHeight: CGFloat = 140
+    
+    func getSelectedType() -> Int {
+        return selectedType
+    }
 }
 
 extension TypeModelPicker: UIPickerViewDataSource {
@@ -42,21 +47,8 @@ extension TypeModelPicker: UIPickerViewDelegate {
        
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: customHeight, height: customWidth))
         imageView.image = UIImage(named: modelData[row].img)
-        
-//        switch modelData[row].img {
-//            case "tinex":
-//                imageView.image = UIImage(named: "tinex-card")
-//            case "vero":
-//                imageView.image = UIImage(named: "vero-card")
-//            case "ramstore":
-//                imageView.image = UIImage(named: "ramstore-card")
-//            case "zito":
-//                imageView.image = UIImage(named: "zito-card")
-//            default:
-//                imageView.image = nil
-//        }
-        
         imageView.contentMode = UIViewContentMode.scaleAspectFit
+
         let y = view.frame.origin.y
         let x = view.frame.origin.x
         view.transform = CGAffineTransform(rotationAngle: (90 * (.pi/180)))
@@ -65,5 +57,9 @@ extension TypeModelPicker: UIPickerViewDelegate {
         view.addSubview(imageView)
         
         return view
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        selectedType = modelData[row].id;
     }
 }

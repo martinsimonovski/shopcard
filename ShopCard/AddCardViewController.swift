@@ -49,74 +49,47 @@ class AddCardViewController: UIViewController {
         typesPicker.delegate = typeModelPicker
         typesPicker.dataSource = typeModelPicker
         typesPicker.reloadAllComponents()
-        
     }
     
-//    func getTypes() {
-//        var types: [FirestoreTypeModel] = []
-//        
-//        db.collection("types").getDocuments() { (querySnapshot, error) in
-//            if (error != nil) {
-//                print("Error getting types: \(error)")
-//            } else {
-//                print("documents: ", querySnapshot!.documents)
-//                for document in querySnapshot!.documents {
-//                    let myData = document.data()
-//                    
-//                    print("\(document.documentID) => \(document.data())")
-//                    let model: FirestoreTypeModel = FirestoreTypeModel(id: document.documentID, name: myData["name"] as! String, img: myData["img"] as! String)
-//                    types.append(model)
-//                }
-//                
-//                print("SHOPCARD: ", types)
-//                self.setTypeModelPicker(types: types)
-//            }
-//        }
-//    }
-
     @objc func addCard() {
-        self.showHideError(show: false)
+        guard let name = nameTxt.text, name != "" else {
+            self.showHideError(show: true, message: "Please insert name")
+            return
+        }
+        guard let barcode = barcodeTxt.text, barcode != "" else {
+            self.showHideError(show: true, message: "Please insert barcode")
+            return
+        }
+        guard let owner = ownerTxt.text, owner != "" else {
+            self.showHideError(show: true, message: "Please insert owner name")
+            return
+        }
         
-        guard let name = nameTxt.text else { return }
-//        guard let type = typeTxt.text else { return }
-        guard let barcode = barcodeTxt.text else { return }
-        guard let owner = ownerTxt.text else { return }
+        showHideError(show: false)
+        addBtn.setTitle("Adding card...", for: .normal)
         
-        print("addCard")
+        let uid = Auth.auth().currentUser?.uid
+        let newCard = db.collection("cards").document()
+        let selectedType = typeModelPicker.getSelectedType() == 0 ? typeModelPicker.modelData[0].id : typeModelPicker.getSelectedType()
         
-        
-        //        let data = ["Fornavn": "Fornavn","Efternavn": "Efternavn"]
-        
-//        self.ref.child("cards").child(uid!).setValue(data)
-//        self.ref.child("cards").child("45thZ5aWIBfPGw8IWNHV").setValue(data, withCompletionBlock: { (error: Error?, ref:DatabaseReference ) in
-//            if let error = error {
-//                print("Data could not be saved: \(error).")
-//            } else {
-//                print("Data saved successfully!")
-//            }
-//        })
-        
-        
-//        self.ref.child("cards").child(uid!).setValue(["name": "My tinex", "serialNumber": "1238612372163", "type": "tinex"])
-
-        let uid = Auth.auth().currentUser?.uid;
-        print(uid!)
-
         let data: [String : Any] = [
-            barcode: [
-                "name": name,
-                "type": "tinex",
-                "barcode": barcode,
-                "owner": owner
-            ]
+            "name": name,
+            "type": selectedType,
+            "barcode": barcode,
+            "owner": owner,
+            "user_id": uid ?? ""
         ]
-        db.collection("cards").document(uid!).setData(data, merge: true)  { error in
+        
+        newCard.setData(data, merge: true) { error in
             if let error = error {
                 print("Error writing document: \(error)")
                 self.showHideError(show: true, message: error.localizedDescription)
             } else {
+                self.performSegueToReturnBack()
                 print("Document successfully written!")
             }
+            
+            self.addBtn.setTitle("Add", for: .normal)
         }
     }
     
