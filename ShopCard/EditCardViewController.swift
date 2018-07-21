@@ -85,7 +85,7 @@ class EditCardViewController: UIViewController {
         
         let uid = Auth.auth().currentUser?.uid
         let editCard = db.collection("cards").document((card?.id)!)
-        let selectedType = typeModelPicker.getSelectedType() == 0 ? typeModelPicker.modelData[0].id : typeModelPicker.getSelectedType()
+        let selectedType = typeModelPicker.getSelectedType() == 0 ? card?.type : typeModelPicker.getSelectedType()
         
         let data: [String : Any] = [
             "name": name,

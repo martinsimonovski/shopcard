@@ -18,6 +18,8 @@ class HomeViewController: UIViewController {
     let db = Firestore.firestore()
     let customHeight: CGFloat = 64
     
+    private let refreshControl = UIRefreshControl()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,16 +32,25 @@ class HomeViewController: UIViewController {
         cardListView.backgroundColor = UIColor.clear
         cardListView.isHidden = true
         
+        if #available(iOS 10.0, *) {
+            cardListView.refreshControl = refreshControl
+        } else {
+            cardListView.addSubview(refreshControl)
+        }
+        refreshControl.addTarget(self, action: #selector(getCards), for: .valueChanged)
+        
         getCards()
     }
     
     @objc func getCards() {
+        
         let uid = Auth.auth().currentUser?.uid
         db.collection("cards").whereField("user_id", isEqualTo: uid!)
             .getDocuments() { (querySnapshot, err) in
                 if let err = err {
                     print("Error getting documents: \(err)")
                 } else {
+                    self.tableData = []
                     for document in querySnapshot!.documents {
                         print("\(document.documentID) => \(document.data())")
                         let myData = document.data()
@@ -48,8 +59,13 @@ class HomeViewController: UIViewController {
                         self.tableData.append(card)
                     }
                     
-                    self.cardListView.reloadData()
-                    self.cardListView.isHidden = false
+                    DispatchQueue.main.async {
+                        
+                        self.cardListView.reloadData()
+                        self.refreshControl.endRefreshing()
+//                        self.activityIndicatorView.stopAnimating()
+                        self.cardListView.isHidden = false
+                    }
                 }
         }
     }
