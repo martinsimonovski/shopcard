@@ -52,12 +52,19 @@ extension ListCardsTableView: UITableViewDataSource {
         editAction.backgroundColor = UIColor.Custom.Static.blue
         return [editAction]
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt didSelectRowAtIndexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let EditCardVC = storyboard.instantiateViewController(withIdentifier: "EditCardViewController") as! EditCardViewController
+        
+        self.inputAccessoryViewController?.navigationController?.pushViewController(EditCardVC, animated: true)
+        //        self.performSegue(withIdentifier: "toHomeScreen", sender: self)
+    }
 }
 
 extension ListCardsTableView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return self.customHeight
     }
-    
     
 }

@@ -34,4 +34,11 @@ class FirestoreCardModel {
         
         return type!.img
     }
+    
+    func getType() -> FirestoreTypeModel {
+        let types = Types.getTypes()
+        let type = types.first(where: { $0.id == self.type })
+        
+        return type!
+    }
 }
