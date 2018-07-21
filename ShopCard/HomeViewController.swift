@@ -25,6 +25,8 @@ class HomeViewController: UIViewController {
         self.navigationItem.setHidesBackButton(true, animated: true)
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         
+        cardListView.backgroundColor = UIColor.clear
+        
         getCards()
     }
     
@@ -51,8 +53,10 @@ class HomeViewController: UIViewController {
         listCardTable = ListCardsTableView()
         
         listCardTable.tableData = cards
+        cardListView.backgroundColor = UIColor.clear
         cardListView.delegate = listCardTable
         cardListView.dataSource = listCardTable
+        cardListView.reloadData()
     }
 
 }

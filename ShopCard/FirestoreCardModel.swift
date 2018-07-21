@@ -17,6 +17,8 @@ class FirestoreCardModel {
     var owner: String = ""
     var user_id: String = ""
     
+    
+    
     init(id: String, name: String, type: Int, barcode: String, owner: String, user_id: String) {
         self.id = id
         self.name = name
@@ -24,5 +26,12 @@ class FirestoreCardModel {
         self.barcode = barcode
         self.owner = owner
         self.user_id = user_id
+    }
+    
+    func getImageName() -> String {
+        let types = Types.getTypes()
+        let type = types.first(where: { $0.id == self.type })
+        
+        return type!.img
     }
 }
