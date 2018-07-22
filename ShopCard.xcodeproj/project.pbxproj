@@ -15,6 +15,7 @@
 		5B5D913D20DAE1C400C5ABAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B5D913B20DAE1C400C5ABAF /* LaunchScreen.storyboard */; };
 		5B6F3BF121034E2E00D19FA8 /* CardListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6F3BF021034E2E00D19FA8 /* CardListViewCell.swift */; };
 		5B6F3BF3210363B400D19FA8 /* EditCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6F3BF2210363B400D19FA8 /* EditCardViewController.swift */; };
+		5B6F3BF52104DD0B00D19FA8 /* BarcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6F3BF42104DD0B00D19FA8 /* BarcodeViewController.swift */; };
 		5B7F951420F2A6ED000E3594 /* FloatLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7F951320F2A6ED000E3594 /* FloatLabelTextField.swift */; };
 		5B825C8820FFA7EA00069428 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B825C8720FFA7EA00069428 /* ViewControllerExtension.swift */; };
 		5B825C8B2100EFD600069428 /* ListCardsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B825C8A2100EFD600069428 /* ListCardsTableView.swift */; };
@@ -73,6 +74,7 @@
 		5B5D913E20DAE1C400C5ABAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B6F3BF021034E2E00D19FA8 /* CardListViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardListViewCell.swift; sourceTree = "<group>"; };
 		5B6F3BF2210363B400D19FA8 /* EditCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditCardViewController.swift; sourceTree = "<group>"; };
+		5B6F3BF42104DD0B00D19FA8 /* BarcodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeViewController.swift; sourceTree = "<group>"; };
 		5B7F951320F2A6ED000E3594 /* FloatLabelTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatLabelTextField.swift; sourceTree = "<group>"; };
 		5B825C8720FFA7EA00069428 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		5B825C8A2100EFD600069428 /* ListCardsTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCardsTableView.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 				5B825C8A2100EFD600069428 /* ListCardsTableView.swift */,
 				5B6F3BF021034E2E00D19FA8 /* CardListViewCell.swift */,
 				5B6F3BF2210363B400D19FA8 /* EditCardViewController.swift */,
+				5B6F3BF42104DD0B00D19FA8 /* BarcodeViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -487,6 +490,7 @@
 				5BB3698020DFFDF200BEA616 /* LoginScreenTextField.swift in Sources */,
 				5B3D08E920ED72A100F0542D /* LauncherViewController.swift in Sources */,
 				5B825C8D2100F03C00069428 /* FirestoreCardModel.swift in Sources */,
+				5B6F3BF52104DD0B00D19FA8 /* BarcodeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

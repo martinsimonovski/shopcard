@@ -106,7 +106,7 @@ extension HomeViewController: UITableViewDataSource {
             print("Edit Button tapped. Row item value = \(self.tableData[indexPath.row])")
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            var EditCardVC = storyboard.instantiateViewController(withIdentifier: "EditCardViewController") as! EditCardViewController
+            let EditCardVC = storyboard.instantiateViewController(withIdentifier: "EditCardViewController") as! EditCardViewController
             EditCardVC.card = self.tableData[indexPath.row]
             self.navigationController?.pushViewController(EditCardVC, animated: true)
         }
@@ -116,7 +116,10 @@ extension HomeViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt didSelectRowAtIndexPath: IndexPath) {
-        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let BarcodeVC = storyboard.instantiateViewController(withIdentifier: "BarcodeViewController") as! BarcodeViewController
+        BarcodeVC.card = self.tableData[didSelectRowAtIndexPath.row]
+        self.navigationController?.pushViewController(BarcodeVC, animated: true)
     }
 }
 

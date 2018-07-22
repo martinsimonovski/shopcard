@@ -89,7 +89,7 @@ class EditCardViewController: UIViewController {
         
         let data: [String : Any] = [
             "name": name,
-            "type": selectedType,
+            "type": selectedType ?? typeModelPicker.modelData[0].id,
             "barcode": barcode,
             "owner": owner,
             "user_id": uid ?? ""
